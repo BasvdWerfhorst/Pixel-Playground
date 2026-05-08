@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    
+    <header>
+        <?php require 'inc/Header.php'; ?>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <?php require 'inc/Footer.php'; ?>
+    </footer>
 </body>
 </html>
