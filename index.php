@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
 </head>
 <body>
     <header>
-        <?php require 'inc/Header.php'; ?>
+        <?php require 'inc/Header.php' ?>
     </header>
     <main>
 
     </main>
     <footer>
-        <?php require 'inc/Footer.php'; ?>
+        <?php require 'inc/Footer.php' ?>
     </footer>
 </body>
 </html>
