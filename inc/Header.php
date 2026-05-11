@@ -14,5 +14,9 @@
             <a href="\Pixel-Playground\index.php" class="headerNav">Home</a>
             <a href="\Pixel-Playground\games.php" class="headerNav">Games</a>
             <a href="" class="headerNav">Help</a>
+
+            <a id="loginButton" href="/Pixel-Playground/login.php" class="btn">Login</a>
         </nav>
+
+        
     </header>

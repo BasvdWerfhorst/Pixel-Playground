@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-
+/* Header */
 #homeNav {
     display: flex;
     flex-direction: row;
@@ -11,12 +11,21 @@ body {
     background-color: #1E2520;
     align-items: center;
     justify-content: left;
+    max-width: 100%;
 }
 
 #homeNav a {
     color: #00FF00;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
+    border-radius: 8px;
+    padding: 5px;
+    transition: color 0.1s ease;
+}
+
+#homeNav a:hover {
+    color: whitesmoke;
+    background-color: gray;
 }
 
 .headerNav {
@@ -27,5 +36,26 @@ body {
 
 #homeNav img {
     height: 10vh;
-    width: 10vw;
+    width: max-content;
+    flex-shrink: 0;
+}
+
+/* Login Button */
+#loginButton {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: #00FF00 1px solid;
+  background-color: #1E2520;
+  color: #1E2520;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 20px;
+  position: absolute;
+  transition: background-color 0.3s ease;
+  
+}
+
+#loginButton:hover {
+ color: whitesmoke;
+ background-color: gray;
 }
