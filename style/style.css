@@ -20,7 +20,7 @@ body {
     font-size: x-large;
     border-radius: 8px;
     padding: 5px;
-    transition: color 0.1s ease;
+    transition: color 0.5s ease;
 }
 
 #homeNav a:hover {
@@ -52,10 +52,46 @@ body {
   right: 20px;
   position: absolute;
   transition: background-color 0.3s ease;
-  
 }
 
 #loginButton:hover {
  color: whitesmoke;
  background-color: gray;
+}
+
+
+/* Specific footer */
+
+#baseFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#homeFoot {
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+    background-color: #1E2520;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+}
+
+#homeFoot a {
+    color: #00FF00;
+    padding: 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#homeFoot a:hover {
+    color: whitesmoke;
+    background-color: gray;
+}
+
+#homeFoot img {
+    height: 6vh;
+    width: max-content;
+    flex-shrink: 0;
 }
