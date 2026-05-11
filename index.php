@@ -12,6 +12,19 @@
     </header>
     <main>
 
+    
+    <section id="indexSection">
+        <article>
+            <h1 class="homePageTitles">Games</h1>
+        </article>
+
+        <article>
+            <h1 class="homePageTitles">Highscores</h1>
+        </article>
+    </section>
+
+
+
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>

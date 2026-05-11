@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #0f1410;
 }
 
 /* Header */
@@ -83,6 +84,7 @@ body {
     padding: 2px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #homeFoot a:hover {
@@ -94,4 +96,28 @@ body {
     height: 6vh;
     width: max-content;
     flex-shrink: 0;
+}
+
+
+/* IndexPage Main */
+
+#indexSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #indexSection article {
+        background-color: #0f1410;
+        text-align: center;
+        width: 50%;
+        justify-self: center;
+    }
+
+.homePageTitles {
+    color: #00FF00;
+    background-color: #1E2520;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
