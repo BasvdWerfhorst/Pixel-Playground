@@ -15,7 +15,7 @@
     
     <section id="indexSection">
         <article>
-            <h1 class="homePageTitles">Games</h1>
+            <h1 class="homePageTitles">Top Games</h1>
                 <img src="\Pixel-Playground\images\Cookieclicker Img.jpg" class="indexImages">
                 <img src="\Pixel-Playground\images\Luigi poker.png" class="indexImages">
                 <img src="\Pixel-Playground\images\RPS img.jpg" class="indexImages">
@@ -23,6 +23,10 @@
 
         <article>
             <h1 class="homePageTitles">Highscores</h1>
+            <section id="highscores">
+                
+            </section>
+
         </article>
     </section>
 
