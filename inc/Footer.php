@@ -5,5 +5,6 @@
             <a href="\Pixel-Playground\index.php" class="headerNav">Home</a>
             <a href="\Pixel-Playground\games.php" class="headerNav">Games</a>
             <a href="" class="headerNav">Help</a>
+            <a href="privecy.php" class="headerNav">Privecy</a>
         </nav>
 </footer>
