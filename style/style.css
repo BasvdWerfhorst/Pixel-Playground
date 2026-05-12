@@ -36,11 +36,19 @@ body {
 }
 
 #homeNav img {
-    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     height: 8vh;
     width: max-content;
     flex-shrink: 0;
-    box-shadow: 0 0 5px #00FF00;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5vw;
+    padding: 0.1vh;
+}
+#logo span {
+    color: #00FF00;
 }
 
 /* Login Button */
