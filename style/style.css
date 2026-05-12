@@ -36,9 +36,11 @@ body {
 }
 
 #homeNav img {
-    height: 10vh;
+    margin-left: 0.5vw;
+    height: 8vh;
     width: max-content;
     flex-shrink: 0;
+    box-shadow: 0 0 5px #00FF00;
 }
 
 /* Login Button */
@@ -93,7 +95,8 @@ body {
 }
 
 #homeFoot img {
-    height: 6vh;
+    margin-left: 0.5vw;
+    height: 5vh;
     width: max-content;
     flex-shrink: 0;
 }
