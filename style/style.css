@@ -3,7 +3,10 @@ body {
     padding: 0;
     background-color: #0f1410;
 }
-
+h1, p {
+    color: #00FF00;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Header */
 #homeNav {
     display: flex;
@@ -35,11 +38,28 @@ body {
     margin-left: 50px;
 }
 
-#homeNav img {
-    height: 10vh;
+#logo img {
+    height: 8vh;
     width: max-content;
     flex-shrink: 0;
 }
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5vw;
+    padding: 0.1vh;
+    gap: 0.5vw;
+}
+#logo span {
+    color: #00FF00;
+}
+#logo a {
+    text-decoration: none;
+}
+#logo h1 {
+    color: #000000;
+}
+
 
 /* Login Button */
 #loginButton {
@@ -93,9 +113,13 @@ body {
 }
 
 #homeFoot img {
-    height: 6vh;
+    /* margin-left: 0.5vw; */
+    height: 5vh;
     width: max-content;
     flex-shrink: 0;
+}
+#footerLogo {
+    margin-left: 0.5vw;
 }
 
 
@@ -130,6 +154,7 @@ body {
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
 
 .homePageScores {
     color: #00FF00;
@@ -163,3 +188,21 @@ body {
 
 
 
+=======
+/* privecy */
+#warning {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1E2520;
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+    margin-top: 10vh;
+    justify-self: center;
+    border-radius: 5vh;
+    border: #000000 5px solid;
+}
+>>>>>>> 3b3e2a9f5f57e501fc847d0a3b0d082f8dc80e81
