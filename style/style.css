@@ -83,10 +83,9 @@ h1, p {
 
 /* Specific footer */
 
-#baseFooter {
-    position: fixed;
-    bottom: 0;
+footer {
     width: 100vw;
+    margin-top: 3vh;
 }
 
 #homeFoot {
