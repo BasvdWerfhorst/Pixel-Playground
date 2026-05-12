@@ -10,8 +10,8 @@
 
         <nav id="homeNav">
             <section id="logo">
-                <img src="\Pixel-Playground\img\NodeHub-homelogo-transparant.png" alt="Nodehub Banner" title="Nodehub Banner">
-                <h1>Node<span>Hub</span></h1>
+                <a href="index.php"><img src="\Pixel-Playground\img\NodeHub-homelogo-transparant.png" alt="Nodehub Banner" title="Nodehub Banner"></a>
+                <a href="index.php"><h1>Node<span>Hub</span></h1></a> 
             </section>
             
 

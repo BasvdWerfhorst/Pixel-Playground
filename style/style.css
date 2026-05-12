@@ -35,8 +35,7 @@ body {
     margin-left: 50px;
 }
 
-#homeNav img {
-    margin-right: 0.5vw;
+#logo img {
     height: 8vh;
     width: max-content;
     flex-shrink: 0;
@@ -46,10 +45,18 @@ body {
     align-items: center;
     margin-left: 0.5vw;
     padding: 0.1vh;
+    gap: 0.5vw;
 }
 #logo span {
     color: #00FF00;
 }
+#logo a {
+    text-decoration: none;
+}
+#logo h1 {
+    color: #000000;
+}
+
 
 /* Login Button */
 #loginButton {
@@ -103,10 +110,13 @@ body {
 }
 
 #homeFoot img {
-    margin-left: 0.5vw;
+    /* margin-left: 0.5vw; */
     height: 5vh;
     width: max-content;
     flex-shrink: 0;
+}
+#footerLogo {
+    margin-left: 0.5vw;
 }
 
 
