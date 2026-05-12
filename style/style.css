@@ -139,7 +139,7 @@ footer {
         justify-self: center;
     }
 
-.homePageTitles {
+.homePageGames {
     color: #00FF00;
     background-color: #1E2520;
     padding: 5px;
@@ -153,6 +153,41 @@ footer {
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
+
+.homePageScores {
+    color: #00FF00;
+    background-color: #1E2520;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.highscoreFrames {
+    color: black;
+    background-color: lightgray;
+    border: #00FF00 solid 1px;
+    border-radius: 4px;
+    margin: 0;
+    height: 30vh;
+}
+
+
+.highscore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 8px; 
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+
+
+
+
+
+
+=======
 /* privecy */
 #warning {
     display: flex;
@@ -169,3 +204,4 @@ footer {
     border-radius: 5vh;
     border: #000000 5px solid;
 }
+>>>>>>> 3b3e2a9f5f57e501fc847d0a3b0d082f8dc80e81
