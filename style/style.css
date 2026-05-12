@@ -59,7 +59,9 @@ h1, p {
 #logo h1 {
     color: #000000;
 }
-
+#logoText {
+    max-height: fit-content;
+}
 
 /* Login Button */
 #loginButton {
@@ -153,7 +155,6 @@ footer {
     border-radius: 4px;
 }
 
-<<<<<<< HEAD
 
 .homePageScores {
     color: #00FF00;
@@ -187,7 +188,6 @@ footer {
 
 
 
-=======
 /* privecy */
 #warning {
     display: flex;
@@ -204,4 +204,3 @@ footer {
     border-radius: 5vh;
     border: #000000 5px solid;
 }
->>>>>>> 3b3e2a9f5f57e501fc847d0a3b0d082f8dc80e81
