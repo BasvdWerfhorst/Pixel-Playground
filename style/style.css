@@ -59,7 +59,9 @@ h1, p {
 #logo h1 {
     color: #000000;
 }
-
+#logoText {
+    max-height: fit-content;
+}
 
 /* Login Button */
 #loginButton {
@@ -83,10 +85,9 @@ h1, p {
 
 /* Specific footer */
 
-#baseFooter {
-    position: fixed;
-    bottom: 0;
+footer {
     width: 100vw;
+    margin-top: 3vh;
 }
 
 #homeFoot {
@@ -155,6 +156,35 @@ h1, p {
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
+=======
+
+.homePageScores {
+    color: #00FF00;
+    background-color: #1E2520;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.highscoreFrames {
+    color: black;
+    background-color: lightgray;
+    border: #00FF00 solid 1px;
+    border-radius: 4px;
+    margin: 0;
+    height: 30vh;
+}
+
+
+.highscore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 8px; 
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+>>>>>>> ea2a64ed42d9d3af734ad686e03396f1f96c8efe
 
 
 
@@ -162,4 +192,23 @@ h1, p {
 
 
 
+<<<<<<< HEAD
 
+=======
+/* privecy */
+#warning {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1E2520;
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+    margin-top: 10vh;
+    justify-self: center;
+    border-radius: 5vh;
+    border: #000000 5px solid;
+}
+>>>>>>> ea2a64ed42d9d3af734ad686e03396f1f96c8efe
