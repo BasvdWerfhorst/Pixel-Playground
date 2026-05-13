@@ -13,6 +13,25 @@
     <main>
 
     
+<<<<<<< HEAD
+ <section class="indexSection">
+    <article>
+            <h1 class="homePageGames">Top Games</h1>
+                <img src="\Pixel-Playground\images\Cookieclicker Img.jpg" class="indexImages">
+                <img src="\Pixel-Playground\images\Luigi poker.png" class="indexImages">
+                <img src="\Pixel-Playground\images\RPS img.jpg" class="indexImages">
+    </article>
+       
+ 
+    <article>
+        <h1 class="homePageGames">hello</h1>
+        <ol>
+            Hello
+            bye
+        </ol>
+    </article>
+
+=======
     <section id="indexSection">
         <article>
             <h1 class="homePageGames">Games</h1>
@@ -33,7 +52,16 @@
             <p class="highscoreFrames">RPS Highscores</p>
             </div>
     </article>
+>>>>>>> ea2a64ed42d9d3af734ad686e03396f1f96c8efe
     </section>
+
+
+
+
+
+
+
+
 
 
 
