@@ -27,8 +27,8 @@ h1, p {
     transition: color 0.5s ease;
 }
 
-#homeNav a:hover {
-    color: whitesmoke;
+#homeNav > a:hover,
+#homeNav #loginButton:hover {
     background-color: gray;
 }
 
@@ -58,28 +58,30 @@ h1, p {
 }
 #logo h1 {
     color: #000000;
+    margin: 0;
+    
 }
+
 #logoText {
     max-height: fit-content;
 }
 
 /* Login Button */
 #loginButton {
-  text-decoration: none;
-  padding: 10px 20px;
-  border: #00FF00 1px solid;
-  background-color: #1E2520;
-  color: #1E2520;
-  border-radius: 8px;
-  font-family: Arial, Helvetica, sans-serif;
-  right: 20px;
-  position: absolute;
-  transition: background-color 0.3s ease;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: #00FF00 1px solid;
+    background-color: #1E2520;
+    color: #1E2520;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 20px;
+    position: absolute;
+    transition: background-color 0.3s ease;
 }
 
 #loginButton:hover {
- color: whitesmoke;
- background-color: gray;
+    background-color: gray;
 }
 
 
@@ -108,8 +110,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#homeFoot a:hover {
-    color: whitesmoke;
+#homeFoot > a:not(#footerLogo):hover {
     background-color: gray;
 }
 
