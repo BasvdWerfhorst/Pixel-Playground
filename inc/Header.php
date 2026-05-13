@@ -1,10 +1,3 @@
-<?php
-
-?>
-
-
-
-
 <nav id="homeNav">
     <section id="logo">
         <a href="index.php"><img src="\Pixel-Playground\img\NodeHub-homelogo-transparant.png" alt="Nodehub Banner" title="Nodehub Banner"></a>

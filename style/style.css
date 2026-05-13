@@ -3,6 +3,9 @@ body {
     padding: 0;
     background-color: #0f1410;
 }
+main {
+    min-height: 81vh;
+}
 h1, p {
     color: #00FF00;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +130,7 @@ footer {
 
 /* IndexPage Main */
 
-.indexSection {
+#indexSection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
@@ -157,8 +160,6 @@ footer {
     border-radius: 4px;
 }
 
-<<<<<<< HEAD
-=======
 
 .homePageScores {
     color: #00FF00;
@@ -185,7 +186,6 @@ footer {
     gap: 8px; 
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
->>>>>>> ea2a64ed42d9d3af734ad686e03396f1f96c8efe
 
 
 
@@ -193,9 +193,6 @@ footer {
 
 
 
-<<<<<<< HEAD
-
-=======
 /* privecy */
 #warning {
     display: flex;
@@ -212,4 +209,3 @@ footer {
     border-radius: 5vh;
     border: #000000 5px solid;
 }
->>>>>>> ea2a64ed42d9d3af734ad686e03396f1f96c8efe
