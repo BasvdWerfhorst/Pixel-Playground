@@ -10,8 +10,27 @@
     <header>
         <?php require 'inc/Header.php' ?>
     </header>
-    <main>
+    <main id="gridGamePage">
+        <article>
+            <a href="">
+            <h3 class="gamePage-Text">Cookieclicker</h3>
+            <img src="\Pixel-Playground\images\Cookieclicker Img.jpg" alt="" class="gamesImages">
+            </a>
+        </article>
+            
+        <article>
+            <a href="">
+            <h3 class="gamePage-Text">Picture Poker</h3>
+            <img src="\Pixel-Playground\images\Luigi poker.png" alt="" class="gamesImages">
+            </a>
+        </article>
 
+        <article>
+            <a href="">
+            <h3 class="gamePage-Text">Rock, Paper, Scissors</h3>
+            <img src="\Pixel-Playground\images\RPS img.jpg" alt="" class="gamesImages">
+            </a>
+        </article>
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
