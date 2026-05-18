@@ -6,15 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
 </head>
-<body>
+<body id="poker">
     <header>
-        <?php require 'inc/Header.php' ?>
+        <?php require '../inc/Header.php' ?>
     </header>
-    <main>
+<main >
+    <section id="pokerTitle">
+        <h1>Poker</h1>
+    </section>
+    <section id="pokerTafel">
+        <section>
 
-    </main>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </section>
+</main>
     <footer>
-        <?php require 'inc/Footer.php' ?>
+        <?php require '../inc/Footer.php' ?>
     </footer>
 </body>
 </html>

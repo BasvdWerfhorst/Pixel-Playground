@@ -2,13 +2,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0f1410;
+    
 }
 main {
-    min-height: 81vh;
+    min-height: 73.6vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 h1, p {
     color: #00FF00;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 /* Header */
 #homeNav {
@@ -90,14 +94,9 @@ h1, p {
 
 /* Specific footer */
 
-footer {
-    margin-top: 3vh;
-}
-
 #homeFoot {
     display: flex;
     flex-direction: row;
-    height: 6vh;
     background-color: #1E2520;
     align-items: center;
     justify-content: left;
@@ -207,4 +206,20 @@ footer {
     justify-self: center;
     border-radius: 5vh;
     border: #000000 5px solid;
+}
+
+#poker{
+    background-color: #1fbc1f;
+}
+#pokerTitle{
+    width: 10vw;
+    height: 5vh;
+}
+
+#pokerTafel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
