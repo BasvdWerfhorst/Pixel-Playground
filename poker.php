@@ -39,6 +39,9 @@
         <img src="" alt="">
         <img src="" alt="">
     </section>
+    <section id="chipCheck">
+        <h1></h1>
+    </section>
     <section id="actionButtons">
         <button id="fold">Fold</button>
         <button id="check">check</button>

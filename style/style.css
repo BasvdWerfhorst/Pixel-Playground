@@ -281,6 +281,8 @@ h1, p {
     background-size: cover;
     background-image: url(../img/chips-poker-chip-svgrepo-com.svg);
     height: 5vh;
+    min-height: 50px;
+    min-width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
