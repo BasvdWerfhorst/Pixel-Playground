@@ -17,7 +17,7 @@ function tap(event) {
     count = count + tapcount;
     counter.textContent = count;
 }
-setInterval(tap, 100);
+setInterval(tap, 1000);
 
 function button(event) {
     if(tapcount == 1) {

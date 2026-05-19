@@ -21,11 +21,7 @@
         <img id="cookie" src="\Pixel-Playground\img\cookie-removebg-preview.png" alt="cookie">
 
         <button id="autocounter">Autoclicker</button>
-        <style>
-            #autocounter {
-                margin: 10px;
-            }
-        </style>
+
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
