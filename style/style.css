@@ -246,9 +246,55 @@ footer {
 
 
 
+/* Cookie clicker */
 
+#cookie-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--corgi-font);
+}
 
+.cookies {
+    display: flex;
+}
 
+.title {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cookies {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--corgi-candy);
+}
+
+#cookie-counter {
+    width: 80%;
+    text-align: center;
+    font-size: 42px;
+    color: white;
+}
+
+#cookie-counter {
+    line-height: 1.4; 
+}
+
+#cookie {
+    margin-top: 50px;
+    max-width: 90%;
+    height: auto;
+}
 
 
 
