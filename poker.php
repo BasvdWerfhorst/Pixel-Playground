@@ -23,11 +23,17 @@
         <img src="" alt="">
     </section>
     <section id="pokerTafel">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <section id="pot">
+            
+        </section>
+        <section id="tafelKaarten">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+        
     </section>
     <section id="handSpeler">
         <img src="" alt="">

@@ -229,7 +229,6 @@ h1, p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vh;
     min-height: 50vh;
     min-width: 70vw;
     background-position: center; 
@@ -237,11 +236,15 @@ h1, p {
     background-size: cover;
     background-image: url(../img/pokertafel.png);
 }
-
+#tafelKaarten{
+    gap: min(2vw , 15px);
+    display: flex;
+}
 #handSpeler, #handAi {
     min-height: 15vh;
     min-width: 75vw;
     display: flex;
+    gap: min(2vw , 15px);
     align-items: center;
     justify-content: center;
 }
