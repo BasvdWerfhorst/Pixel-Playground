@@ -16,13 +16,19 @@
         <h1>Poker</h1>
     </section>
     <section id="handAi">
-
+        <img src="" alt="">
+        <img src="" alt="">
     </section>
     <section id="pokerTafel">
-
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
     </section>
     <section id="handSpeler">
-        <img src="img/svg-cards/2_of_clubs.svg" alt="frhnh">
+        <img src="" alt="">
+        <img src="" alt="">
     </section>
     <section id="actionButtons">
         <button id="fold">Fold</button>
