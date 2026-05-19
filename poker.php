@@ -30,8 +30,11 @@
         <button id="raise">Raise</button>
     </section>
     <section id="game options">
-        <button id="startGame">Start Game</button>
+        <button id="startRound">Start round</button>
         <button id="endGame">cash out</button>
+    </section>
+    <section>
+        <button id="startGame">start game</button>
     </section>
 </main>
     <footer>
