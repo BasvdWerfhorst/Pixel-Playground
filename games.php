@@ -12,7 +12,7 @@
     </header>
     <main id="gridGamePage">
         <article>
-            <a href="">
+            <a href="\Pixel-Playground\Cookieclicker.php">
             <h3 class="gamePage-Text">Cookieclicker</h3>
             <img src="\Pixel-Playground\images\Cookieclicker Img.jpg" alt="" class="gamesImages">
             </a>
