@@ -10,7 +10,7 @@
     <header>
         <?php require '../inc/Header.php' ?>
     </header>
-<main >
+<main>
     <section id="pokerTitle">
         <h1>Poker</h1>
     </section>
