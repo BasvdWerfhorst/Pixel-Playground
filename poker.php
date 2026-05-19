@@ -24,7 +24,7 @@
     </section>
     <section id="pokerTafel">
         <section id="pot">
-            
+            <h1></h1>
         </section>
         <section id="tafelKaarten">
             <img src="" alt="">

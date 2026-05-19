@@ -227,6 +227,7 @@ h1, p {
 
 #pokerTafel{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 50vh;
@@ -235,6 +236,7 @@ h1, p {
     background-repeat: no-repeat; 
     background-size: cover;
     background-image: url(../img/pokertafel.png);
+    gap: 3vh;
 }
 #tafelKaarten{
     gap: min(2vw , 15px);
@@ -272,4 +274,14 @@ h1, p {
     top: 0;
     left: 0;
     z-index: 1;
+}
+#pot{
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url(../img/chips-poker-chip-svgrepo-com.svg);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
