@@ -231,5 +231,22 @@ h1, p {
     align-items: center;
     justify-content: center;
     gap: 1vh;
-    background: scr="img/";
+    min-height: 50vh;
+    min-width: 70vw;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url(../img/pokertafel.png);
+}
+
+#handSpeler, #handAi {
+    min-height: 15vh;
+    min-width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#poker img {
+    height: 12vh;
+    width: auto;
 }

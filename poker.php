@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
+    <script src="lib/poker.js" defer></script>
+</head>
+<body id="poker">
+    <header>
+        <?php require 'inc/Header.php' ?>
+    </header>
+<main>
+    <section id="pokerTitle">
+        <h1>Poker</h1>
+    </section>
+    <section id="handAi">
+
+    </section>
+    <section id="pokerTafel">
+
+    </section>
+    <section id="handSpeler">
+        <img src="img/svg-cards/2_of_clubs.svg" alt="frhnh">
+    </section>
+    <section id="actionButtons">
+        <button id="fold">Fold</button>
+        <button id="call">Call</button>
+        <button id="raise">Raise</button>
+    </section>
+    <section id="game options">
+        <button id="startGame">Start Game</button>
+        <button id="endGame">cash out</button>
+    </section>
+</main>
+    <footer>
+        <?php require 'inc/Footer.php' ?>
+    </footer>
+</body>
+</html>
