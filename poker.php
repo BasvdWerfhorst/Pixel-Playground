@@ -41,6 +41,7 @@
     </section>
     <section>
         <button id="startGame">start game</button>
+        <button id="nextgame">next game</button>
     </section>
 </main>
     <footer>
