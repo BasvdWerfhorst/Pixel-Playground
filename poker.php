@@ -33,7 +33,7 @@
     <section id="actionButtons">
         <button id="fold">Fold</button>
         <button id="call">Call</button>
-        <button id="raise">Raise</button>
+        <button id="raise">Raise/bet</button>
     </section>
     <section id="game options">
         <button id="startRound">Start round</button>
