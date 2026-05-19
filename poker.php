@@ -15,6 +15,9 @@
     <section id="pokerTitle">
         <h1>Poker</h1>
     </section>
+    <section id="startBox">
+        <button id="startGame">start game</button>
+    </section>
     <section id="handAi">
         <img src="" alt="">
         <img src="" alt="">
@@ -36,12 +39,10 @@
         <button id="raise">Raise/bet</button>
     </section>
     <section id="game options">
-        <button id="startRound">Start round</button>
+        <button id="startRound">Start round/Next round</button>
         <button id="endGame">cash out</button>
     </section>
-    <section>
-        <button id="startGame">start game</button>
-    </section>
+    
 </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
