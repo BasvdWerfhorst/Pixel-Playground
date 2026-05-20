@@ -12,7 +12,9 @@
     <header>
         <?php require 'inc/Header.php' ?>
     </header>
-    <main id="cookie-main">
+
+    <main id="cookie-grid">
+    <left id='cookie-left'>
         <header class="title">Cookie Clicker</header>                
         <detail class="cookies">
             <div id="cookie-counter">0</div>
@@ -21,6 +23,23 @@
         <img id="cookie" src="\Pixel-Playground\img\cookie-removebg-preview.png" alt="cookie">
 
         <button id="autocounter">Autoclicker</button>
+    </left>
+
+    <right id="cookie-right">
+        
+        <h3 class="purchaseNumberTop" style="color: white;">text</h3>
+        <img src="\Pixel-Playground\img\oven img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
+        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+
+        <h3 class="purchaseNumberTop" style="color: white;">text</h3>
+        <img src="\Pixel-Playground\img\bakery img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
+        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+
+        <h3 class="purchaseNumberTop" style="color: white;">text</h3>
+        <img src="\Pixel-Playground\img/Factory img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
+        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+
+    </right>
 
     </main>
     <footer>

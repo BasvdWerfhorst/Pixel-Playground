@@ -3,13 +3,12 @@ counter = document.querySelector("#cookie-counter");
 count = 0;
 autoClicker = document.querySelector("#autocounter");
 
-let tapcount = 1;
 
-// cookieClick function hier:
+let tapcount = 1;
+let intervalId = null;
 
 function addCounter(event) {
     count = count + 1;
-
     counter.textContent = count;
 }
 
@@ -17,23 +16,120 @@ function tap(event) {
     count = count + tapcount;
     counter.textContent = count;
 }
-setInterval(tap, 1000);
 
 function button(event) {
-    if(tapcount == 1) {
-        tapcount = 0;
-    }   else {
-            tapcount = 1;
-        }
+    if (intervalId === null) {
+        intervalId = setInterval(tap, 1000);
+    } else {
+        clearInterval(intervalId);
+        intervalId = null;
     }
+}
+
+
+cookie.addEventListener('click', addCounter)
+
+autoClicker.addEventListener('click', button)
+
+
+
+
+
+document.getElementById('cookie-oven-img')addEventListener('click' (event)) {
+    if
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let tapcount = 1;
+
+// // cookieClick function hier:
+
+// function addCounter(event) {
+//     count = count + 1;
+//     counter.textContent = count;
+// }
+
+// function tap(event) {
+//     count = count + tapcount;
+//     counter.textContent = count;
+// }
+// setInterval(tap, 1000);
+
+// function button(event) {
+//     if(tapcount == 1) {
+//         tapcount = 0;
+//     }   else {
+//             tapcount = 1;
+//         }
+//     }
 
 
 
 // add event listener op de cookie hier:
 
-cookie.addEventListener('click', addCounter)
 
-autoClicker.addEventListener('click', button)
 
 
 
