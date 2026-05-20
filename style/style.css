@@ -5,7 +5,7 @@ body {
     
 }
 main {
-    min-height: 73.6vh;
+    min-height: 74.4vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -222,7 +222,6 @@ h1, p {
     align-items: center;
     justify-content: center;
     width: 30vw;
-    height: 15vh;
 }
 
 #pokerTafel{
