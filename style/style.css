@@ -367,5 +367,12 @@ footer {
 .RPS-cards img {
   max-width: 150px;
   height: auto;
-  margin-top: 100%;
+  margin-top: 30vh;
+}
+
+#result-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
 }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, paper, scissors</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
+    <script src="\Pixel-Playground\Javascript\RPS.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,11 +13,16 @@
     </header>
     <main>
 
+
+<p id="result-display">Click the button to play!</p>
+
+
+
 <section>
     <article class="RPS-cards">
-        <img src="\Pixel-Playground\img\RPS\Rock-removebg-preview.png" >
-        <img src="\Pixel-Playground\img\RPS\Paper-removebg-preview.png" >
-        <img src="\Pixel-Playground\img\RPS\Scissor-removebg-preview.png">
+        <img src="\Pixel-Playground\img\RPS\Rock-removebg-preview.png" id="rock" class="choice-img">
+        <img src="\Pixel-Playground\img\RPS\Paper-removebg-preview.png" id="paper" class="choice-img">
+        <img src="\Pixel-Playground\img\RPS\Scissor-removebg-preview.png" id="scissors" class="choice-img">
     </article>
 </section>
 
