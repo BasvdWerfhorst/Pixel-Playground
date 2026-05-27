@@ -21,23 +21,21 @@
             cookies
         </detail>
         <img id="cookie" src="\Pixel-Playground\img\cookie-removebg-preview.png" alt="cookie">
-
-        <button id="autocounter">Autoclicker</button>
     </left>
 
     <right id="cookie-right">
         
         <h3 class="purchaseNumberTop" style="color: white;">text</h3>
-        <img src="\Pixel-Playground\img\oven img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
-        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+        <img src="\Pixel-Playground\img\oven img.png" alt="cookieclicker_oven_img" class="cookie-buyables" id="cookie-oven-img">
+        <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
         <h3 class="purchaseNumberTop" style="color: white;">text</h3>
         <img src="\Pixel-Playground\img\bakery img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
-        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+        <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
         <h3 class="purchaseNumberTop" style="color: white;">text</h3>
         <img src="\Pixel-Playground\img/Factory img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
-        <h3 class="purchaseNumberLow" style="color: white;"> 1000</h3>
+        <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
     </right>
 

@@ -1,8 +1,8 @@
 cookie = document.querySelector("#cookie");
 counter = document.querySelector("#cookie-counter");
 count = 0;
-autoClicker = document.querySelector("#autocounter");
 
+// Base cookie clicker
 
 let tapcount = 1;
 let intervalId = null;
@@ -12,32 +12,36 @@ function addCounter(event) {
     counter.textContent = count;
 }
 
-function tap(event) {
-    count = count + tapcount;
-    counter.textContent = count;
-}
-
-function button(event) {
-    if (intervalId === null) {
-        intervalId = setInterval(tap, 1000);
-    } else {
-        clearInterval(intervalId);
-        intervalId = null;
-    }
-}
-
 
 cookie.addEventListener('click', addCounter)
 
-autoClicker.addEventListener('click', button)
+// Base cookie clicker
+
+
+// Buying process
+
+
+let cost = 20;
+let purchaseNumber = document.getElementById('purchaseNumberLow');
+let purchasedOvens = 0;
+
+
+document.getElementById('cookie-oven-img').addEventListener('click', () => {
+    if (count > cost) {
+        count -= cost; 
+        
+        purchasedOvens++; 
+        
+        purchaseNumber.innerText = purchasedOvens;
+        
+
+    } else {
+        alert("Not enough cookies!");
+    }
+});
 
 
 
-
-
-document.getElementById('cookie-oven-img')addEventListener('click' (event)) {
-    if
-}
 
 
 
