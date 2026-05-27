@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
+    <script src="lib/tic tac toe.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,11 +30,11 @@
 
         </section>
         <section>
-            <button id="">nextround</button>
+            <button id="nextround-ticTacToe">next/start round</button>
         </section>
-        <section>
-            <button id="start-ticTacToe">start</button>
-        </section>
+        <!-- <section id="start-ticTacToe-box">
+            <button id="start-ticTacToe" onclick="startgame()">start</button>
+        </section> -->
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
