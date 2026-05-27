@@ -2,13 +2,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0f1410;
-}
-main {
-    min-height: 81vh;
-}
-h1, p {
     color: #00FF00;
     font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 /* Header */
 #homeNav {
@@ -90,9 +95,6 @@ h1, p {
 
 /* Specific footer */
 
-footer {
-    margin-top: 3vh;
-}
 
 #homeFoot {
     display: flex;
@@ -353,3 +355,18 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-self: center;
+    margin-top: 5vh; 
+    background-image: url('../img/tic tac toe background.png');
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+    margin-bottom: 5vh;
+}
+#ticTacToe-background{
+    background-color: green;
+}

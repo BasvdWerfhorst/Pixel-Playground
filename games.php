@@ -31,6 +31,13 @@
             <img src="\Pixel-Playground\images\RPS img.jpg" alt="" class="gamesImages">
             </a>
         </article>
+
+        <article>
+            <a href="\Pixel-Playground\tic tac toe.php">
+            <h3 class="gamePage-Text">Tic Tac Toe</h3>
+            <img src="img\tic tac toe.png" alt="" class="gamesImages">
+            </a>
+        </article>
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
