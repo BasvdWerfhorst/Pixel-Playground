@@ -368,6 +368,11 @@ main {
     background-repeat: no-repeat;
     margin-bottom: 5vh;
 }
+#title-ticTacToe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #ticTacToe-background{
     background-color: green;
 }

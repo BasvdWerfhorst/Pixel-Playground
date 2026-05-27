@@ -12,6 +12,7 @@
         <?php require 'inc/Header.php' ?>
     </header>
     <main id="ticTacToe-background">
+    <h1 id="title-ticTacToe">tic tac toe</h1>
     <section id="tic-tac-toe">
         <p id="1-1"></p>
         <p id="1-2"></p>
@@ -26,15 +27,15 @@
         <P id="3-3"></P>
     </section>
 
-        <section>
-
-        </section>
-        <section>
-            <button id="nextround-ticTacToe">next/start round</button>
-        </section>
-        <!-- <section id="start-ticTacToe-box">
-            <button id="start-ticTacToe" onclick="startgame()">start</button>
-        </section> -->
+    <section>
+        <h3 id="ticTacToe-turn"></h3>
+    </section>
+    <section id="ticTacToe-actions">
+        <button id="nextround-ticTacToe">next/start round</button>
+    </section>
+    <!-- <section id="start-ticTacToe-box">
+        <button id="start-ticTacToe" onclick="startgame()">start</button>
+    </section> -->
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>
