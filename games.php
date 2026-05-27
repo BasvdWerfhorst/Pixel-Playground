@@ -26,7 +26,7 @@
         </article>
 
         <article>
-            <a href="">
+            <a href="\Pixel-Playground\RPS.php">
             <h3 class="gamePage-Text">Rock, Paper, Scissors</h3>
             <img src="\Pixel-Playground\images\RPS img.jpg" alt="" class="gamesImages">
             </a>
