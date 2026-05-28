@@ -14,17 +14,17 @@
     <main id="ticTacToe-background">
     <h1 id="title-ticTacToe">tic tac toe</h1>
     <section id="tic-tac-toe">
-        <p id="1-1"></p>
-        <p id="1-2"></p>
-        <p id="1-3"></p>
+        <img id="1-1" src="" alt="">
+        <img id="1-2" src="" alt="">
+        <img id="1-3" src="" alt="">
         
-        <p id="2-1"></p>
-        <p id="2-2"></p>
-        <P id="2-3"></P>
+        <img id="2-1" src="" alt="">
+        <img id="2-2" src="" alt="">
+        <img id="2-3" src="" alt="">
         
-        <p id="3-1"></p>
-        <p id="3-2"></p>
-        <P id="3-3"></P>
+        <img id="3-1" src="" alt="">
+        <img id="3-2" src="" alt="">
+        <img id="3-3" src="" alt="">
     </section>
 
     <section>
