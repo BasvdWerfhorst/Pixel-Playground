@@ -1,11 +1,12 @@
-cookie = document.querySelector("#cookie");
-counter = document.querySelector("#cookie-counter");
-count = 0;
+let cookie = document.querySelector("#cookie");
+let counter = document.querySelector("#cookie-counter");
+let count = 0;
 
+let autoCount = 0;
+
+let prijsOven = 10;
+let ovenCount = 0;
 // Base cookie clicker
-
-let tapcount = 1;
-let intervalId = null;
 
 function addCounter(event) {
     count = count + 1;
@@ -15,66 +16,48 @@ function addCounter(event) {
 
 cookie.addEventListener('click', addCounter)
 
-// Base cookie clicker
 
 
-// Buying process
+// als ik op de knop klik,
+// element ophalen
+// addEventListener toevoegen
+// functie maken waar de event listner naar verwijst. 
 
+let oven = document.getElementById("cookie-oven-img")
+oven.addEventListener('click', ovenKoop);
 
-let cost = 20;
-let purchaseNumber = document.getElementById('purchaseNumberLow');
-let purchasedOvens = 0;
+setInterval(autoCounter, 1000) 
 
-
-document.getElementById('cookie-oven-img').addEventListener('click', () => {
-    if (count > cost) {
-        count -= cost; 
-        
-        purchasedOvens++; 
-        
-        purchaseNumber.innerText = purchasedOvens;
-        
-
-    } else {
-        alert("Not enough cookies!");
-    }
-});
+function autoCounter() {
+    count = count + autoCount;
+    counter.textContent = count;
+    console.log(count);
+}
 
 
 
 
+function ovenKoop() {
+// dan koop ik èèn oven
 
 
-
-
-
-
-
-
-
+if (count >= prijsOven) { 
+    ovenCount += 1;
+    count = count - prijsOven;
+    prijsOven = prijsOven * Math.floor(1+ (0.10*ovenCount)); // math.floor rond het getal af naar beneden.
+    counter.textContent = count; 
+    autoCount = autoCount + 1;
+} else {
+    alert("Niet genoeg koekjes");
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// //   En er word bijgehouden hoeveel ovens ik heb gekocht.
+// ovens moet + 1
+ }
 
 
 

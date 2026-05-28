@@ -30,11 +30,11 @@
         <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
         <h3 class="purchaseNumberTop" style="color: white;">text</h3>
-        <img src="\Pixel-Playground\img\bakery img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
+        <img src="\Pixel-Playground\img\bakery img.png" alt="cookieclicker_bakery_img" class="cookie-buyables">
         <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
         <h3 class="purchaseNumberTop" style="color: white;">text</h3>
-        <img src="\Pixel-Playground\img/Factory img.png" alt="cookieclicker_oven_img" class="cookie-buyables">
+        <img src="\Pixel-Playground\img/Factory img.png" alt="cookieclicker_factory_img" class="cookie-buyables">
         <h3 class="purchaseNumberLow" style="color: white;"></h3>
 
     </right>
