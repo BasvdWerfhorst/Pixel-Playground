@@ -367,7 +367,16 @@ main {
     background-position: center;   
     background-repeat: no-repeat;
     margin-bottom: 5vh;
+    justify-items: center;
+    align-items: center;
 }
+.ticTacToe-x-o {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: block;
+}
+
 #title-ticTacToe{
     display: flex;
     justify-content: center;
