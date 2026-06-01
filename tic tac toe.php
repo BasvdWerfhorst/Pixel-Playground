@@ -28,14 +28,10 @@
             <img id="3-3" class="ticTacToe-x-o" alt="">
         </section>
 
-        <section id="aside">
-            <section>
-                <h3 id="ticTacToe-turn"></h3>
-            </section>
-            <section id="ticTacToe-actions">
-                <button id="nextround-ticTacToe">next/start round</button>
-            </section>
-        </section>
+        <aside id="aside">
+            <h3 id="ticTacToe-turn"></h3>
+            <button id="nextround-ticTacToe">next/start round</button>
+        </aside>
     </section>
     
     <section id="start-ticTacToe-box">
