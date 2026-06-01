@@ -364,11 +364,21 @@ main {
     margin-top: 5vh; 
     background-image: url('../img/tic tac toe background.png');
     background-size: cover;
-    background-position: center;   
+    background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 5vh;
     justify-items: center;
     align-items: center;
+}
+#ticTacMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aside{
+    width: 15vw;
+    display: flex;
+    justify-self: flex-end;
 }
 .ticTacToe-x-o {
     width: 80px;
