@@ -33,7 +33,6 @@
             <button id="nextround-ticTacToe">next/start round</button>
         </aside>
     </section>
-    
     <section id="start-ticTacToe-box">
         <button id="start-ticTacToe" onclick="startgame()">start</button>
     </section>
