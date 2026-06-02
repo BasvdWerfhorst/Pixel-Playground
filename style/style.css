@@ -361,7 +361,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px 0;
 }
 
 .RPS-cards img {
@@ -375,4 +374,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: larger;
+}
+
+.choice-img {
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+.choice-img:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 20px rgba(0, 255, 187, 0.15);
 }
