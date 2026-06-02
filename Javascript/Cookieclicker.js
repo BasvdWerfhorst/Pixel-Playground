@@ -14,10 +14,20 @@ let prijsOven = 10;
 let bakery = document.getElementById("BakeryImg");
 let amountBakery = document.getElementById("purchaseNumberLowBakery");
 let costBakery = document.getElementById("prijsBakery"); 
-let prijsBakeryGetal = 50; 
+let prijsBakeryGetal = 1; 
 let bakeryAmount = 0;
 
 let bakeryMultiplier = 1;
+
+// Factory varialblen
+let factoryImg = document.getElementById("FactoryImg");
+let factoryPrijs = 800;
+let factoryCount = 0;
+const factoryCookies = 100;
+let facTop = document.getElementById("prijsFactory");
+let facLow = document.getElementById("purchaseNumberLowFactory");
+let facAdd = 0;
+
 
 
 
@@ -26,18 +36,13 @@ let bakeryMultiplier = 1;
 
 function addCounter(event) {
     count = count + 1;
-    counter.textContent = count;
+    counter.textContent = Math.floor(count);
 }
 
 
 cookie.addEventListener('click', addCounter)
 
 
-
-// als ik op de knop klik,
-// element ophalen
-// addEventListener toevoegen
-// functie maken waar de event listner naar verwijst. 
 
 let oven = document.getElementById("cookie-oven-img")
 
@@ -52,7 +57,7 @@ function autoCounter() {
 }
 
 
-
+// OVEN!
 
 function ovenKoop() { //hier roep ik de oven eventlistner op.
 
@@ -60,7 +65,7 @@ if (count >= prijsOven) {
     ovenCount += 1;
     count = count - prijsOven;
     prijsOven = Math.floor(prijsOven * (1 + (0.10 * ovenCount))); // math.floor rond het getal af naar beneden.
-    prijsTotaalOven.innerText = "Cost: " + prijsOven; 
+    prijsTotaalOven.innerText = "Cost: " + prijsOven + "(+1p/s)"; 
     counter.textContent = count; 
     autoCount = autoCount + 1;
     ovenNumberCount = ovenNumberCount + 1;
@@ -72,6 +77,8 @@ if (count >= prijsOven) {
  }
 
 
+ // Bakery
+
 function buyBakery() {
     if (count >= prijsBakeryGetal) {
         count = count - prijsBakeryGetal;
@@ -79,29 +86,84 @@ function buyBakery() {
         amountBakery.innerText = bakeryAmount;
 
         prijsBakeryGetal = Math.floor(prijsBakeryGetal * (1 + (0.80 * bakeryAmount)));
-        costBakery.innerText = "Cost: " + prijsBakeryGetal;
+        costBakery.innerText = "Cost: " + prijsBakeryGetal + " (+1% p/10s)";
 
         bakeryMultiplier += 0.01;
-        console.log(bakeryMultiplier)
+        // console.log(bakeryMultiplier)
     } else {
         alert("Niet genoeg koekjes");
     }
 }
 
 
-setInterval(bakeryTime, 1000);
-
+setInterval(bakeryTime, 10000);
 
 
 function bakeryTime() {
     if (bakeryAmount > 0) {
-        count = (count * bakeryMultiplier);
+        count = Math.floor(count * bakeryMultiplier);
         counter.textContent = Math.floor(count);
     }
 }
 
 
 bakery.addEventListener('click', buyBakery);
+
+
+
+
+// Factory
+
+
+// wil ik dat ik er elke 5 seconded 
+// 100 koekjes bij krijg.
+
+
+// en het aantal gekocht moet worden bijgehouden.
+
+setInterval(facCounter, 5000);
+
+function facCounter() {
+    if (factoryCount += 0) {
+    count = Math.floor(count + facAdd);
+    }
+}
+
+
+function factoryClick() {
+    if (count >= factoryPrijs) {
+        factoryCount = factoryCount + 1;
+        console.log(factoryCount)
+        count = count - factoryPrijs;
+        factoryPrijs = Math.floor(factoryPrijs * 1.5);
+        facTop.innerText = "Cost: " + factoryPrijs + "(+100 p/5s)";
+        facLow.innerText = factoryCount;
+        facAdd = (facAdd + 100);
+
+    } else {
+        alert("Niet genoeg koekjes");
+    }
+
+}
+
+
+ 
+
+factoryImg.addEventListener('click', factoryClick);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
