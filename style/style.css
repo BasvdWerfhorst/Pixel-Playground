@@ -301,6 +301,11 @@ footer {
     margin-top: 10px;
     width: 25vw;
     height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cookie:active {
+    transform: scale(0.90);
 }
 
 #autocounter {

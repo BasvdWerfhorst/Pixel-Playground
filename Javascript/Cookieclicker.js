@@ -14,7 +14,7 @@ let prijsOven = 10;
 let bakery = document.getElementById("BakeryImg");
 let amountBakery = document.getElementById("purchaseNumberLowBakery");
 let costBakery = document.getElementById("prijsBakery"); 
-let prijsBakeryGetal = 1; 
+let prijsBakeryGetal = 50; 
 let bakeryAmount = 0;
 
 let bakeryMultiplier = 1;
@@ -150,70 +150,6 @@ function factoryClick() {
  
 
 factoryImg.addEventListener('click', factoryClick);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let tapcount = 1;
-
-// // cookieClick function hier:
-
-// function addCounter(event) {
-//     count = count + 1;
-//     counter.textContent = count;
-// }
-
-// function tap(event) {
-//     count = count + tapcount;
-//     counter.textContent = count;
-// }
-// setInterval(tap, 1000);
-
-// function button(event) {
-//     if(tapcount == 1) {
-//         tapcount = 0;
-//     }   else {
-//             tapcount = 1;
-//         }
-//     }
-
-
-
-// add event listener op de cookie hier:
-
-
-
 
 
 

@@ -29,11 +29,11 @@
         <img src="\Pixel-Playground\img\oven img.png" alt="cookieclicker_oven_img" class="cookie-buyables" id="cookie-oven-img">
         <h3 id="purchaseNumberLowOven" class="purchaseNumberLow" style="color: white;">0</h3>
 
-        <h3 id="prijsBakery" class="purchaseNumberTop" style="color: white;">Cost: 50</h3>
+        <h3 id="prijsBakery" class="purchaseNumberTop" style="color: white;">Cost: 50 (+1% p/10s)</h3>
         <img src="\Pixel-Playground\img\bakery img.png" alt="cookieclicker_bakery_img" class="cookie-buyables" id="BakeryImg">
         <h3 id="purchaseNumberLowBakery" class="purchaseNumberLow" style="color: white;">0</h3>
 
-        <h3 id="prijsFactory" class="purchaseNumberTop" style="color: white;">Cost: 800</h3>
+        <h3 id="prijsFactory" class="purchaseNumberTop" style="color: white;">Cost: 800 (+100 p/5s)</h3>
         <img src="\Pixel-Playground\img/Factory img.png" alt="cookieclicker_factory_img" class="cookie-buyables" id="FactoryImg">
         <h3 id="purchaseNumberLowFactory" class="purchaseNumberLow" style="color: white;">0</h3>
 
