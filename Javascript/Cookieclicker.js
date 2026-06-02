@@ -17,6 +17,8 @@ let costBakery = document.getElementById("prijsBakery");
 let prijsBakeryGetal = 50; 
 let bakeryAmount = 0;
 
+let bakeryMultiplier = 1;
+
 
 
 
@@ -46,7 +48,7 @@ setInterval(autoCounter, 1000)
 function autoCounter() {
     count = count + autoCount;
     counter.textContent = count;
-    console.log(count);
+    // console.log(count);
 }
 
 
@@ -78,6 +80,9 @@ function buyBakery() {
 
         prijsBakeryGetal = Math.floor(prijsBakeryGetal * (1 + (0.80 * bakeryAmount)));
         costBakery.innerText = "Cost: " + prijsBakeryGetal;
+
+        bakeryMultiplier += 0.01;
+        console.log(bakeryMultiplier)
     } else {
         alert("Niet genoeg koekjes");
     }
@@ -90,7 +95,7 @@ setInterval(bakeryTime, 1000);
 
 function bakeryTime() {
     if (bakeryAmount > 0) {
-        count = count + (count * (bakeryAmount + 0.001) * bakeryAmount);
+        count = (count * bakeryMultiplier);
         counter.textContent = Math.floor(count);
     }
 }
