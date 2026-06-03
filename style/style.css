@@ -370,6 +370,7 @@ main {
     justify-items: center;
     align-items: center;
 }
+
 #ticTacMain {
     display: flex;
     flex-direction: row-reverse;
