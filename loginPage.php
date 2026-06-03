@@ -1,21 +1,20 @@
 <?php
-
+session_start();
 $melding = "";
-if(isset($_POST['submit'])){;
-    require "database/login.php";
+if(isset($_POST['submit']) || isset($_POST['add'])){
     if(isset($_POST['add'])){
-       if (empty($_POST["username"]) || empty($_POST["password"])) {
+       if (empty($_POST["addGebruikersnaam"]) || empty($_POST["addWachtwoord"])) {
             $melding = "Vul alle velden in!";
         } else {
+            require "database/DBC.php";
             $addUsername = $_POST["addGebruikersnaam"];
             $addPassword = $_POST["addWachtwoord"];
-            require "DBC.php";
             try {
-                $sql = "INSERT INTO users (username, password) VALUES ('$addUsername', '$addPassword')";
+                $sql = "INSERT INTO gebruikers (gebruikersnaam, wachtwoord) VALUES ('$addUsername', '$addPassword')";
                 $conn->query($sql);
                 $conn->close();
                 $melding = "Data succesvol toegevoegd!";
-                header('Location: inloginPage.php');
+                header('Location: loginPage.php');
 
             } catch (Exception $e) {
                 $melding = "Error: " . $e->getMessage();
@@ -25,8 +24,8 @@ if(isset($_POST['submit'])){;
         if(!empty($_POST['gebruikersnaam']) && !empty($_POST['wachtwoord'])){
             $uname = $_POST['gebruikersnaam'];
             $pass = $_POST['wachtwoord'];
+            require "database/login.php";
             if(login($uname, $pass)){
-                session_start();
                 $_SESSION['gebruikersnaam'] = $uname;
                 $_SESSION['loggedIn'] = true;
                 header("Location: profiel.php");
@@ -39,7 +38,6 @@ if(isset($_POST['submit'])){;
         }
     }
 }
-    
 ?>
 
 <!DOCTYPE html>
@@ -59,11 +57,13 @@ if(isset($_POST['submit'])){;
     <p><?php echo $melding; ?></p>
     <section id="loginRegister"></section>
     <form action="" method="post" id="loginForm">
+        <h1>Login</h1>
         <input type="text" name="gebruikersnaam" placeholder="gebruikersnaam">
         <input type="wachtwoord" name="wachtwoord" placeholder="wachtwoord">
         <input type="submit" name="submit" value="submit">
     </form>
     <form action="" method="post" id="registerForm"> 
+        <h1>Register</h1>
         <input type="text" name="addGebruikersnaam" placeholder="gebruikersnaam">
         <input type="wachtwoord" name="addWachtwoord" placeholder="wachtwoord">
         <input type="submit" name="add" value="submit">
