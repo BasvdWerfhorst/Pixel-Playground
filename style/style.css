@@ -2,13 +2,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0f1410;
-}
-main {
-    min-height: 81vh;
-}
-h1, p {
     color: #00FF00;
     font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 /* Header */
 #homeNav {
@@ -90,9 +95,6 @@ h1, p {
 
 /* Specific footer */
 
-footer {
-    margin-top: 3vh;
-}
 
 #homeFoot {
     display: flex;
@@ -388,4 +390,73 @@ footer {
 .choice-img:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 20px rgba(0, 255, 187, 0.15);
+}
+
+
+/* tic tac toe */
+#tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-self: center;
+    margin-top: 5vh; 
+    background-image: url('../img/tic tac toe background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5vh;
+    justify-items: center;
+    align-items: center;
+}
+
+#ticTacMain {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20vw;
+    margin-left: 5vw;
+}
+
+#aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3vw;
+}
+.ticTacToe-x-o {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: block;
+}
+
+#title-ticTacToe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ticTacToe-background{
+    background-color: green;
+}
+#start-ticTacToe{
+    padding: 10px 20px;
+    border: #00FF00 1px solid;
+    background-color: #1E2520;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+}
+#start-ticTacToe-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
