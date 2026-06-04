@@ -1,19 +1,29 @@
-<nav id="homeNav">
-    <section id="logo">
+<script src="javascript/ingeloged.js" defer></script>
+
+<section id="logo">
         <a href="index.php"><img src="\Pixel-Playground\img\NodeHub-homelogo-transparant.png" alt="Nodehub Banner" title="Nodehub Banner"></a>
         <a id="logoText" href="index.php"><h1>Node<span>Hub</span></h1></a> 
-    </section>
-    
-
+</section>
+<nav class="homeNav" id="bigNav">
     <a href="\Pixel-Playground\index.php" class="headerNav">Home</a>
     <a href="\Pixel-Playground\games.php" class="headerNav">Games</a>
-    <a href="" class="navInlog">friends</a>
-    <a href="" class="navInlog">highscores</a>
-    <a href="profiel.php" class="navInlog">profiel</a>
-    <a id="loginButton" href="/Pixel-Playground/loginPage.php" class="btn">Login</a>
-    <button class="navInlog">uiloggen</button>
-    <section>
-        <a href="database/uitgelogd.php">log uit</a>
-    </section>
-    
+    <?php
+    if (isset($_SESSION['loggedIn'])){
+        ?>
+        <a href="" class="headerNav">friends</a>
+        <a href="" class="headerNav">highscores</a>
+        <a href="profiel.php" class="headerNav">profiel</a>
+
+        <a href="database/uitgelogd.php" class="logButton">log uit</a>
+        <?php
+    } else {
+        ?>
+        <a class="logButton" href="/Pixel-Playground/loginPage.php">Login</a>
+
+        <?php
+    }
+    ?>
+</nav>
+<nav>
+
 </nav>

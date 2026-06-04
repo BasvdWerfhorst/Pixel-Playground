@@ -41,4 +41,4 @@
         <?php require 'inc/Footer.php' ?>
     </footer>
 </body>
-</html>
+</html> 
