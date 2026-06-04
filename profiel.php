@@ -4,7 +4,7 @@ if(empty($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true){
     header('Location: index.php');
     exit;
 }
-
+session_abort();
 ?>
 <!DOCTYPE html>
 <html lang="en">
