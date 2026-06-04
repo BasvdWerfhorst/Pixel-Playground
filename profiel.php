@@ -4,6 +4,11 @@ if(empty($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true){
     header('Location: index.php');
     exit;
 }
+if (isset($_COOKIE['id'])) {
+    echo "Cookie is gevonden";
+} else {
+    echo "Cookie is niet gevonden.";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

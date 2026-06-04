@@ -5,20 +5,9 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
     if(isset($_POST['add'])){
        if (empty($_POST["addGebruikersnaam"]) || empty($_POST["addWachtwoord"])) {
             $melding = "Vul alle velden in!";
-        } else {
-            require "database/DBC.php";
-            $addUsername = $_POST["addGebruikersnaam"];
-            $addPassword = $_POST["addWachtwoord"];
-            try {
-                $sql = "INSERT INTO gebruikers (gebruikersnaam, wachtwoord) VALUES ('$addUsername', '$addPassword')";
-                $conn->query($sql);
-                $conn->close();
-                $melding = "Data succesvol toegevoegd!";
-                header('Location: loginPage.php');
-
-            } catch (Exception $e) {
-                $melding = "Error: " . $e->getMessage();
-            }
+        } 
+        else {
+           require "database/register.php";
         }
     } elseif (isset($_POST['submit'])){ 
         if(!empty($_POST['gebruikersnaam']) && !empty($_POST['wachtwoord'])){
@@ -28,6 +17,9 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
             if(login($uname, $pass)){
                 $_SESSION['gebruikersnaam'] = $uname;
                 $_SESSION['loggedIn'] = true;
+                setcookie("gebruikersnaam", $uname, time() + (30 * 24 * 60 * 60), "/");
+                setcookie("wachtwoord", true, time() + (30 * 24 * 60 * 60), "/");
+                setcookie("id", $id, time() + (30 * 24 * 60 * 60), "/");
                 header("Location: profiel.php");
                 exit();
             }else{
