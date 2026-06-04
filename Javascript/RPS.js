@@ -1,4 +1,14 @@
 const resultDisplay = document.getElementById('result-display');
+const hamMenu = document.querySelector('.rps-nav-button');
+const offscrMenu = document.querySelector('.rps-off-screen-menu');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offscrMenu.classList.toggle('active');
+});
+
+
+
 
 function playRound(playerMove) {
     let randomNumber = Math.floor(Math.random() * 3) + 1; 

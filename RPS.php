@@ -13,8 +13,21 @@
     </header>
     <main>
 
+    <div class="rps-off-screen-menu">
+    <ul id="Rps-Ul">
+        <li>Cartoon</li>
+        <li>Realistic</li>
+        <li>Weird</li>
+    </ul>
+</div>
+   
+<nav class="rps-nav-button rps-style">
+    <span>Card</span>
+    <span>Styles</span>
+</nav>
 
 <p id="result-display">Click the button to play!</p>
+
 
 
 
