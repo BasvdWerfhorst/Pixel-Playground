@@ -7,6 +7,13 @@
 
     <a href="\Pixel-Playground\index.php" class="headerNav">Home</a>
     <a href="\Pixel-Playground\games.php" class="headerNav">Games</a>
-
+    <a href="" class="navInlog">friends</a>
+    <a href="" class="navInlog">highscores</a>
+    <a href="profiel.php" class="navInlog">profiel</a>
     <a id="loginButton" href="/Pixel-Playground/loginPage.php" class="btn">Login</a>
+    <button class="navInlog">uiloggen</button>
+    <section>
+        <a href="database/uitgelogd.php">log uit</a>
+    </section>
+    
 </nav>
