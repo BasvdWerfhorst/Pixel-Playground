@@ -30,6 +30,7 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
         }
     }
 }
+session_abort();
 ?>
 
 <!DOCTYPE html>
