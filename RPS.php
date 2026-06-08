@@ -39,6 +39,9 @@
     </article>
 </template>
 
+<div id="style1"></div>
+
+
 <template id="template-Realistic">
     <article class="RPS-cards">
         <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen">

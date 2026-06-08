@@ -52,16 +52,18 @@ document.getElementById('scissors').addEventListener('click', function() {
 });
 
 
-const cartoon = document.getElementById("rps-cartoon");
+
 const realistic = document.getElementById("rps-realistic");
 const neon = document.getElementById("rps-neon");
+const cartoon = document.getElementById("rps-cartoon");
+const styleCartoon = document.getElementById("style1");
 
 cartoon.addEventListener('click', () => {
     const templateCartoon = document.getElementById("template-Cartoon");
     const RPScards = document.querySelector('.RPS-cards');
     const clone = templateCartoon.content.cloneNode(true);
 
-    RPScards.appendChild(clone);
+    styleCartoon.appendChild(clone);
     
 });
 
@@ -76,7 +78,8 @@ neon.addEventListener('click', () => {
 
 
 // dat de oude kaarten onzichtbaar worden gemaakt, 
-// en de opgeklikte thema kaarten worden Getoont .
+// en de opgeklikte thema kaarten worden Getoont.
+// als er geen style is gekozen wil ik dat die automatisch de normale toont.
 
 
 
