@@ -17,7 +17,7 @@
     <ul id="Rps-Ul">
         <li id="rps-cartoon">Cartoon</li>
         <li id="rps-realistic">Realistic</li>
-        <li id="rps-weird">Weird</li>
+        <li id="rps-weird">Neon</li>
     </ul>
 </div>
    
@@ -31,14 +31,29 @@
 
 
 
-<section>
+<template>
     <article class="RPS-cards">
-        <img src="\Pixel-Playground\img\RPS\Rock-removebg-preview.png" id="rock" class="choice-img">
-        <img src="\Pixel-Playground\img\RPS\Paper-removebg-preview.png" id="paper" class="choice-img">
-        <img src="\Pixel-Playground\img\RPS\Scissor-removebg-preview.png" id="scissors" class="choice-img">
+        <img src="\Pixel-Playground\img\RPS\Rock-removebg-preview.png" id="rock" class="choice-img" alt="Plaatje steen">
+        <img src="\Pixel-Playground\img\RPS\Paper-removebg-preview.png" id="paper" class="choice-img" alt="Plaatje papier">
+        <img src="\Pixel-Playground\img\RPS\Scissor-removebg-preview.png" id="scissors" class="choice-img" alt="Plaatje schaar">
     </article>
-</section>
+</template>
 
+<template>
+    <article class="RPS-cards">
+        <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen">
+        <img src="\Pixel-Playground\img\RPS\Papier 2.jpg" class="choice-img" alt="Plaatje papier">
+        <img src="\Pixel-Playground\img\RPS\Schaar 2.jpg" class="choice-img" alt="Plaatje schaar">
+    </article>
+</template>
+
+<template>
+    <article class="RPS-cards">
+        <img src="\Pixel-Playground\img\RPS\Rock 3.png" class="choice-img" alt="Plaatje steen">
+        <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje papier">
+        <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje schaar">
+    </article>
+</template>
 
 
 
