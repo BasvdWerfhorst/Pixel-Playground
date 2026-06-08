@@ -5,6 +5,8 @@ function login($gebruikersnaam, $wachtwoord){
         $sql = "SELECT * FROM gebruikers WHERE gebruikersnaam = '$gebruikersnaam' AND wachtwoord = '$wachtwoord'";
         $result = $conn->query($sql);
         if($result->num_rows == 1){
+            $row = $result->fetch_object();
+            $id = $row->id;  
             $result->close();
             $conn->close();
             return true;
