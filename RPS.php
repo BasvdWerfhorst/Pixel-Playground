@@ -15,9 +15,9 @@
 
     <div class="rps-off-screen-menu">
     <ul id="Rps-Ul">
-        <li>Cartoon</li>
-        <li>Realistic</li>
-        <li>Weird</li>
+        <li id="rps-cartoon">Cartoon</li>
+        <li id="rps-realistic">Realistic</li>
+        <li id="rps-weird">Weird</li>
     </ul>
 </div>
    
