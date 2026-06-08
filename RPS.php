@@ -17,7 +17,7 @@
     <ul id="Rps-Ul">
         <li id="rps-cartoon">Cartoon</li>
         <li id="rps-realistic">Realistic</li>
-        <li id="rps-weird">Neon</li>
+        <li id="rps-neon">Neon</li>
     </ul>
 </div>
    
@@ -31,7 +31,7 @@
 
 
 
-<template>
+<template id="template-Cartoon">
     <article class="RPS-cards">
         <img src="\Pixel-Playground\img\RPS\Rock-removebg-preview.png" id="rock" class="choice-img" alt="Plaatje steen">
         <img src="\Pixel-Playground\img\RPS\Paper-removebg-preview.png" id="paper" class="choice-img" alt="Plaatje papier">
@@ -39,7 +39,7 @@
     </article>
 </template>
 
-<template>
+<template id="template-Realistic">
     <article class="RPS-cards">
         <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen">
         <img src="\Pixel-Playground\img\RPS\Papier 2.jpg" class="choice-img" alt="Plaatje papier">
@@ -47,7 +47,7 @@
     </article>
 </template>
 
-<template>
+<template id="template-Neon">
     <article class="RPS-cards">
         <img src="\Pixel-Playground\img\RPS\Rock 3.png" class="choice-img" alt="Plaatje steen">
         <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje papier">

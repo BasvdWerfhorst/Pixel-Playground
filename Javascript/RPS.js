@@ -50,3 +50,59 @@ document.getElementById('paper').addEventListener('click', function() {
 document.getElementById('scissors').addEventListener('click', function() {
     playRound('Scissors');
 });
+
+
+const cartoon = document.getElementById("rps-cartoon");
+const realistic = document.getElementById("rps-realistic");
+const neon = document.getElementById("rps-neon");
+
+cartoon.addEventListener('click', () => {
+    const templateCartoon = document.getElementById("template-Cartoon");
+    const RPScards = document.querySelector('.RPS-cards');
+    const clone = templateCartoon.content.cloneNode(true);
+
+    RPScards.appendChild(clone);
+    
+});
+
+realistic.addEventListener('click', () => {
+    
+});
+
+neon.addEventListener('click', () => {
+    
+});
+
+
+
+// dat de oude kaarten onzichtbaar worden gemaakt, 
+// en de opgeklikte thema kaarten worden Getoont .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
