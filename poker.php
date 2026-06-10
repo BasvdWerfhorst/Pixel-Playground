@@ -21,6 +21,8 @@
     <section id="handAi">
         <img src="" alt="">
         <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
     </section>
     <section id="pokerTafel">
         <section id="pot">
@@ -30,12 +32,12 @@
             <img src="" alt="">
             <img src="" alt="">
             <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
         </section>
         
     </section>
     <section id="handSpeler">
+        <img src="" alt="">
+        <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
     </section>
