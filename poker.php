@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
-    <script src="lib/poker.js" defer></script>
+    <script src="javascript/poker.js" defer></script>
 </head>
 <body id="poker">
     <header>

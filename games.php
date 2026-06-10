@@ -19,7 +19,7 @@
         </article>
             
         <article>
-            <a href="">
+            <a href="poker.php">
             <h3 class="gamePage-Text">Picture Poker</h3>
             <img src="\Pixel-Playground\images\Luigi poker.png" alt="" class="gamesImages">
             </a>
