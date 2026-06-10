@@ -33,6 +33,10 @@
             <img src="" alt="">
             <img src="" alt="">
         </section>
+        <section id="chips">
+            <h1>chips: </h1>
+            <h1></h1>
+        </section>
         
     </section>
     <section id="handSpeler">

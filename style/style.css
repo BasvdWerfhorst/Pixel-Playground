@@ -249,6 +249,13 @@ h1, p {
     align-items: center;
     justify-content: center;
 }
+#chips{
+    display: flex;
+    gap: min(2vw , 15px);
+    align-items: center;
+    justify-content: center;
+    color: #1fbc1f;
+}
 #poker img {
     height: 12vh;
     width: auto;
