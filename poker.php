@@ -53,7 +53,7 @@
         <button id="check">check</button>
         <button id="raise">Raise/bet</button>
     </section>
-    <section id="game options">
+    <section id="gameOptions">
         <button id="startRound">Start round/Next round</button>
         <button id="endGame">cash out</button>
     </section>
