@@ -30,6 +30,7 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
         }
     }
 }
+session_abort();
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +40,7 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
-    <script src="lib/login.js" defer></script>
+    <script src="Javascript/log-reg.js" defer></script>
 </head>
 <body>
 <header>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
-    <script src="lib/tic tac toe.js" defer></script>
+    <script src="Javascript/tic tac toe.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,4 +41,4 @@
         <?php require 'inc/Footer.php' ?>
     </footer>
 </body>
-</html>
+</html> 
