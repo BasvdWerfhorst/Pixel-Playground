@@ -254,7 +254,8 @@ h1, p {
     gap: min(2vw , 15px);
     align-items: center;
     justify-content: center;
-    color: #1fbc1f;
+    color:#00FF00;
+    
 }
 #poker img {
     height: 12vh;

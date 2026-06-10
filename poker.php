@@ -34,8 +34,8 @@
             <img src="" alt="">
         </section>
         <section id="chips">
-            <h1>chips: </h1>
-            <h1></h1>
+            <h2>chips: </h2>
+            <h2></h2>
         </section>
         
     </section>
