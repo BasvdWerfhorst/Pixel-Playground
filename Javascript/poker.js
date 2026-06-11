@@ -18,6 +18,7 @@ let cashout = 0;
 let pot = 0;
 let puntS = 0;
 let puntA = 0;
+let PB = 0;
 let endHandS = [];
 let endHandA = [];
 let winHandS = "";
@@ -35,6 +36,7 @@ startG.addEventListener("click", startGame);
 function startGame(){
     game = 1;
     chips = startChips; 
+    PB = startChips;
     sChipUpdate();
     console.log(chips);
     startG.style.display = "none";
@@ -64,7 +66,11 @@ function endRound() {
 function sChipUpdate(){
     sChips = chips;
     spelerChips.children[1].innerHTML = sChips;
+    if(chips >= PB){
+        PB = chips
+        console.log("pb:"+PB)
     }
+}
 
 startR.addEventListener("click", startRound);
 function startRound(){
