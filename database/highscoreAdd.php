@@ -11,11 +11,21 @@ $id = $_SESSION['gebruiker_id'];
 if(!empty($highscore)){
     if($_SESSION['loggedIn'] == true){
         try {
-            $sql = "INSERT INTO highscores (game_id, gebruiker_id, highscore, timestamp) VALUES (4, '$id', '$highscore', '$timestamp')";
+            $sql = "INSERT INTO highscores (game_id, gebruiker_id, highscore,) VALUES (4, '$id', '$highscore')";
             $conn->query($sql);
             $conn->close();
         } catch (Exception $e) {
             echo $e->getMessage();
         }
+    } else if(1==1){
+        
+    }else{
+        // try {
+        //     $sql = "INSERT INTO highscores (game_id, gebruiker_id, highscore, timestamp) VALUES (4, 0, '$highscore', '$timestamp')";
+        //     $conn->query($sql);
+        //     $conn->close();
+        // } catch (Exception $e) {
+        //     echo $e->getMessage();
+        // }
     }
 }
