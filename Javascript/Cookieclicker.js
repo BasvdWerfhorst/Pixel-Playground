@@ -112,16 +112,10 @@ bakery.addEventListener('click', buyBakery);
 
 
 
-// Factory
 
 
-// wil ik dat ik er elke 5 seconded 
-// 100 koekjes bij krijg.
+let timer = setInterval(facCounter, 5000);
 
-
-// en het aantal gekocht moet worden bijgehouden.
-
-setInterval(facCounter, 5000);
 
 function facCounter() {
     if (factoryCount += 0) {

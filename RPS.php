@@ -39,24 +39,28 @@
     </article>
 </template>
 
-<div id="style1"></div>
+
 
 
 <template id="template-Realistic">
     <article class="RPS-cards">
-        <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen">
-        <img src="\Pixel-Playground\img\RPS\Papier 2.jpg" class="choice-img" alt="Plaatje papier">
-        <img src="\Pixel-Playground\img\RPS\Schaar 2.jpg" class="choice-img" alt="Plaatje schaar">
+        <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen" id="rock">
+        <img src="\Pixel-Playground\img\RPS\Papier 2.jpg" class="choice-img" alt="Plaatje papier" id="paper">
+        <img src="\Pixel-Playground\img\RPS\Schaar 2.jpg" class="choice-img" alt="Plaatje schaar" id="scissors">
     </article>
 </template>
 
+
+
 <template id="template-Neon">
     <article class="RPS-cards">
-        <img src="\Pixel-Playground\img\RPS\Rock 3.png" class="choice-img" alt="Plaatje steen">
-        <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje papier">
-        <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje schaar">
+        <img src="\Pixel-Playground\img\RPS\Rock 3.png" class="choice-img" alt="Plaatje steen" id="rock">
+        <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje papier" id="paper">
+        <img src="\Pixel-Playground\img\RPS\schaar 3.avif" class="choice-img" alt="Plaatje schaar" id="scissors">
     </article>
 </template>
+
+<div class="style1"></div>
 
 
 
