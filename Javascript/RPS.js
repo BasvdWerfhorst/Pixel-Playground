@@ -47,109 +47,111 @@ function playRound(playerMove) {
 const realistic = document.getElementById("rps-realistic");
 const neon = document.getElementById("rps-neon");
 const cartoonButton = document.getElementById('rps-cartoon');
-const style1 = document.querySelector('.style1');
 
-
-
-
-
-if (style1 === 0) {
-
-// Cartoon
-cartoonButton.addEventListener('click', () => {
-    const templateCartoon = document.getElementById("template-Cartoon");
+function checkStyle() {
     const style1 = document.querySelector('.style1');
-    const cloneCartoon = templateCartoon.content.cloneNode(true);
 
-    
-    cloneCartoon.getElementById('rock').addEventListener('click', function() {
-    playRound('Rock');
-    });
+    if (style1.textContent !== '') {
 
-    cloneCartoon.getElementById('paper').addEventListener('click', function() {
-    playRound('Paper');
-    });
+        // Cartoon
+        cartoonButton.addEventListener('click', () => {
+            const templateCartoon = document.getElementById("template-Cartoon");
+            const style1 = document.querySelector('.style1');
+            const cloneCartoon = templateCartoon.content.cloneNode(true);
 
-    cloneCartoon.getElementById('scissors').addEventListener('click', function() {
-    playRound('Scissors');
-    });
+            style1.replaceChildren();
+            
+            // Changed to querySelector so it searches the clone
+            cloneCartoon.querySelector('#rock').addEventListener('click', function() {
+                playRound('Rock');
+            });
 
+            cloneCartoon.querySelector('#paper').addEventListener('click', function() {
+                playRound('Paper');
+            });
 
-    style1.appendChild(cloneCartoon);
+            cloneCartoon.querySelector('#scissors').addEventListener('click', function() {
+                playRound('Scissors');
+            });
 
-});
+            style1.appendChild(cloneCartoon);
+        });
 
+        // Realistic
+        realistic.addEventListener('click', () => {
+            const templateRealistic = document.getElementById("template-Realistic");
+            const style1 = document.querySelector('.style1');
+            const cloneRealistic = templateRealistic.content.cloneNode(true);
 
-// Realistic
-realistic.addEventListener('click', () => {
-    const templateRealistic = document.getElementById("template-Realistic");
-    const style1 = document.querySelector('.style1');
-    const cloneRealistic = templateRealistic.content.cloneNode(true);
-    
-    cloneRealistic.getElementById('rock').addEventListener('click', function() {
-    playRound('Rock');
-    });
+            style1.replaceChildren();
+            
+            cloneRealistic.querySelector('#rock').addEventListener('click', function() {
+                playRound('Rock');
+            });
 
-    cloneRealistic.getElementById('paper').addEventListener('click', function() {
-    playRound('Paper');
-    });
+            cloneRealistic.querySelector('#paper').addEventListener('click', function() {
+                playRound('Paper');
+            });
 
-    cloneRealistic.getElementById('scissors').addEventListener('click', function() {
-    playRound('Scissors');
-    });
+            cloneRealistic.querySelector('#scissors').addEventListener('click', function() {
+                playRound('Scissors');
+            });
 
+            style1.appendChild(cloneRealistic);
+        });
 
-    style1.appendChild(cloneRealistic);
-});
+        // Neon
+        neon.addEventListener('click', () => {
+            const templateNeon = document.getElementById("template-Neon");
+            const style1 = document.querySelector('.style1');
+            const cloneNeon = templateNeon.content.cloneNode(true);
 
+            style1.replaceChildren();
+            
+            cloneNeon.querySelector('#rock').addEventListener('click', function() {
+                playRound('Rock');
+            });
 
-// Neon
-neon.addEventListener('click', () => {
-    const templateNeon = document.getElementById("template-Neon");
-    const style3 = document.querySelector('.style1');
-    const cloneNeon = templateNeon.content.cloneNode(true);
-    
-    cloneNeon.getElementById('rock').addEventListener('click', function() {
-    playRound('Rock');
-    });
+            cloneNeon.querySelector('#paper').addEventListener('click', function() {
+                playRound('Paper');
+            });
 
-    cloneNeon.getElementById('paper').addEventListener('click', function() {
-    playRound('Paper');
-    });
+            cloneNeon.querySelector('#scissors').addEventListener('click', function() {
+                playRound('Scissors');
+            });
 
-    cloneNeon.getElementById('scissors').addEventListener('click', function() {
-    playRound('Scissors');
-    });
+            style1.appendChild(cloneNeon);
+        });
 
+    } else {
 
-    style1.appendChild(cloneNeon);
-});
+        const templateCartoon = document.querySelector("#template-Cartoon");
+        const style1 = document.querySelector('.style1');
+        const cloneCartoon = templateCartoon.content.cloneNode(true);
 
-} else {
+        style1.replaceChildren();
+        
+        cloneCartoon.querySelector('#rock').addEventListener('click', function() {
+            playRound('Rock');
+        });
 
+        cloneCartoon.querySelector('#paper').addEventListener('click', function() {
+            playRound('Paper');
+        });
 
-    const templateCartoon = document.querySelector("#template-Cartoon");
-    const style1 = document.querySelector('.style1');
-    const cloneCartoon = templateCartoon.content.cloneNode(true);
+        cloneCartoon.querySelector('#scissors').addEventListener('click', function() {
+            playRound('Scissors');
+        });
 
-    
-    cloneCartoon.getElementById('rock').addEventListener('click', function() {
-    playRound('Rock');
-    });
+        style1.appendChild(cloneCartoon);
 
-    cloneCartoon.getElementById('paper').addEventListener('click', function() {
-    playRound('Paper');
-    });
+        // SAFE: Re-run once to bind the click events now that style1 has content
+        checkStyle(); 
+    } 
+}
 
-    cloneCartoon.getElementById('scissors').addEventListener('click', function() {
-    playRound('Scissors');
-    });
-
-
-    style1.appendChild(cloneCartoon);
-
-};
-
+// Kickstart the function on initial page load
+checkStyle();
 
 
 

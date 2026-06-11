@@ -114,7 +114,8 @@ bakery.addEventListener('click', buyBakery);
 
 
 
-let timer = setInterval(facCounter, 5000);
+// let timer = 
+setInterval(facCounter, 5000);
 
 
 function facCounter() {
