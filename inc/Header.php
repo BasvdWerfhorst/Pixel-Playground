@@ -23,6 +23,6 @@
     }
     ?>
 </nav>
-<nav>
+<nav id="hamburgerMenu">
 
 </nav>
