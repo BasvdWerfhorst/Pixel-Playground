@@ -49,11 +49,18 @@ function cashOut() {
     chips = 0;
     console.log(cashout);
     console.log(chips);
-    bordWipe();
     game = 0;
     round = 0;
     turn = 0;
-    location.reload();
+    sChipUpdate();
+    fetch('database/highscoreAdd.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ highscore: PB })
+})
+
+    setTimeout(bordWipe,1000);
+    // location.reload();
 }
 function endRound() {
     bordWipe();
