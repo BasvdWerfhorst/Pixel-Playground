@@ -14,7 +14,9 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
             $uname = $_POST['gebruikersnaam'];
             $pass = $_POST['wachtwoord'];
             require "database/login.php";
-            if(login($uname, $pass)){
+            $result = login($uname, $pass);
+            if($result['success']){
+                $_SESSION['gebruiker_id'] = $result['id'];
                 $_SESSION['gebruikersnaam'] = $uname;
                 $_SESSION['loggedIn'] = true;
                 setcookie("gebruikersnaam", $uname, time() + (30 * 24 * 60 * 60), "/");
@@ -30,6 +32,7 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
         }
     }
 }
+session_abort();
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +42,7 @@ if(isset($_POST['submit']) || isset($_POST['add'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
-    <script src="lib/login.js" defer></script>
+    <script src="Javascript/log-reg.js" defer></script>
 </head>
 <body>
 <header>

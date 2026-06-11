@@ -9,7 +9,7 @@ function login($gebruikersnaam, $wachtwoord){
             $id = $row->id;  
             $result->close();
             $conn->close();
-            return true;
+            return ['success' => true, 'id' => $row->id];
         }else{
             $result->close();
             $conn->close();
