@@ -8,30 +8,28 @@ $cashout = $data['cashout'];
 $id = $_SESSION['gebruiker_id'];
 
 
-if(!empty($chips)){
-    if($_SESSION['loggedIn'] == true){
-        try{
-            $sql = "SELECT * FROM save_gamedata WHERE gebruiker_id = '$id' AND game_id = 4";
-            $result = $conn->query($sql);
-            if($result->num_rows == 1){
-                $row = $result->fetch_object();
-                $saveData = $row->save_data;
-                $id = $row->save_id;
-                $sql2 = "DELETE FROM save_gamedata WHERE save_id = '$id'";                
-                $conn->query($sql2);
-                echo json_encode(['saveData' => $saveData]);
-                $result->close();
-                $conn->close();
-                return;
-            }else {
-                if($cashout > 1000){
-                    $conn->query("INSERT INTO save_gamedata (game_id, gebruiker_id, save_data) VALUES (4, '$id', '$cashout')");
-                }
-                    echo json_encode(['saveData' => null]);
-                    $result->close();
-                    $conn->close();
-                }
-                return ;
+
+if($_SESSION['loggedIn'] == true){
+    try{
+        $sql = "SELECT * FROM save_gamedata WHERE gebruiker_id = '$id' AND game_id = 4";
+        $result = $conn->query($sql);
+        if($result->num_rows == 1){
+            $row = $result->fetch_object();
+            $saveData = $row->save_data;
+            $saveId = $row->save_id;
+            $conn->query("DELETE FROM save_gamedata WHERE save_id = '$saveId'");
+            echo json_encode(['saveData' => $saveData]);
+            $result->close();
+            $conn->close();
+        }else{
+            if($cashout > 1000){
+                $conn->query("INSERT INTO save_gamedata (game_id, gebruiker_id, save_data) VALUES (4, '$id', '$cashout')");
             }
+            echo json_encode(['saveData' => null]);
+            $result->close();
+            $conn->close();
         }
+    } catch(Exception $e){
+        echo $e->getMessage();
     }
+}

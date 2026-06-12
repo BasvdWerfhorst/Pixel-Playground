@@ -41,7 +41,7 @@ function startGame(){
     console.log(chips);
     startG.style.display = "none";
     document.getElementById("startBox").style.display = "none";
-    fetch('database/update.php', {
+    fetch('database/saveChips.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ chips: chips, cashout: cashout })
@@ -65,10 +65,10 @@ function cashOut() {
     round = 0;
     turn = 0;
     sChipUpdate();
-    fetch('database/update.php', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chips: chips, cashout: cashout })
+    fetch('database/saveChips.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chips: chips, cashout: cashout })
     })
     fetch('database/highscoreAdd.php', {
     method: 'POST',
