@@ -508,6 +508,9 @@ header nav {
     z-index: 1;
 }
 
+ /* poker */
+
+
 #poker{
     background-color: #1fbc1f;
 }
@@ -594,4 +597,9 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#PB{
+    display: flex;
+    position:absolute;
+    left: 5vw;
 }

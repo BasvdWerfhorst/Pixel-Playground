@@ -36,6 +36,10 @@
         <section id="chips">
             <h2>chips: </h2>
             <h2></h2>
+            <section id="PB">
+                <h2>persinal best: </h2>
+                <h2></h2>
+            </section>
         </section>
         
     </section>
@@ -44,9 +48,6 @@
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
-    </section>
-    <section id="chipCheck">
-        <h1></h1>
     </section>
     <section id="actionButtons">
         <button id="fold">Fold</button>

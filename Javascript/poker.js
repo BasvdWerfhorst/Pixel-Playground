@@ -41,6 +41,18 @@ function startGame(){
     console.log(chips);
     startG.style.display = "none";
     document.getElementById("startBox").style.display = "none";
+    fetch('database/update.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chips: chips, cashout: cashout })
+    })
+    .then(res => res.json())
+    .then(data => {
+    if(data.saveData !== null){
+        chips = data.saveData;
+            sChipUpdate();
+        }   
+    })
 }
 
 endG.addEventListener("click", cashOut);
@@ -53,11 +65,17 @@ function cashOut() {
     round = 0;
     turn = 0;
     sChipUpdate();
+    fetch('database/update.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chips: chips, cashout: cashout })
+    })
     fetch('database/highscoreAdd.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ highscore: PB })
-})
+    })
+    
 
     setTimeout(bordWipe,1000);
     // location.reload();
@@ -75,6 +93,7 @@ function sChipUpdate(){
     spelerChips.children[1].innerHTML = sChips;
     if(chips >= PB){
         PB = chips
+        document.getElementById("PB").children[1].innerHTML = PB;
         console.log("pb:"+PB)
     }
 }
