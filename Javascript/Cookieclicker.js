@@ -26,10 +26,7 @@ let factoryCount = 0;
 const factoryCookies = 100;
 let facTop = document.getElementById("prijsFactory");
 let facLow = document.getElementById("purchaseNumberLowFactory");
-let facAdd = 0;
-
-
-
+let facAdd = 100;
 
 
 // Base cookie clicker
@@ -39,10 +36,7 @@ function addCounter(event) {
     counter.textContent = Math.floor(count);
 }
 
-
 cookie.addEventListener('click', addCounter)
-
-
 
 let oven = document.getElementById("cookie-oven-img")
 
@@ -56,7 +50,6 @@ function autoCounter() {
     // console.log(count);
 }
 
-
 // OVEN!
 
 function ovenKoop() { //hier roep ik de oven eventlistner op.
@@ -65,6 +58,9 @@ if (count >= prijsOven) {
     ovenCount += 1;
     count = count - prijsOven;
     prijsOven = Math.floor(prijsOven * (1 + (0.10 * ovenCount))); // math.floor rond het getal af naar beneden.
+    if (prijsOven >= 100) {
+        prijsOven = Math.floor(prijsOven * 0.8)
+    } 
     prijsTotaalOven.innerText = "Cost: " + prijsOven + "(+1p/s)"; 
     counter.textContent = count; 
     autoCount = autoCount + 1;
@@ -75,7 +71,6 @@ if (count >= prijsOven) {
     alert("Niet genoeg koekjes");
 }
  }
-
 
  // Bakery
 
@@ -95,9 +90,7 @@ function buyBakery() {
     }
 }
 
-
 setInterval(bakeryTime, 10000);
-
 
 function bakeryTime() {
     if (bakeryAmount > 0) {
@@ -106,43 +99,50 @@ function bakeryTime() {
     }
 }
 
-
 bakery.addEventListener('click', buyBakery);
 
+// Factory Logic
 
+let timerSpeed = 10100; 
+let timer;
 
-
-
-
-// let timer = 
-setInterval(facCounter, 5000);
-
-
-function facCounter() {
-    if (factoryCount += 0) {
-    count = Math.floor(count + facAdd);
-    }
+function startTimer() {
+    clearInterval(timer); 
+    timer = setInterval(facCounter, timerSpeed); 
 }
 
+function facCounter() {
+    if (factoryCount > 0) {
+        count = Math.floor(count + facAdd);
+        counter.textContent = count;
+    }
+}
 
 function factoryClick() {
     if (count >= factoryPrijs) {
         factoryCount = factoryCount + 1;
-        console.log(factoryCount)
+        console.log(factoryCount);
+        
         count = count - factoryPrijs;
+        counter.textContent = count;
         factoryPrijs = Math.floor(factoryPrijs * 1.5);
-        facTop.innerText = "Cost: " + factoryPrijs + "(+100 p/5s)";
+
+        
+        timerSpeed = Math.max(500, Math.floor(timerSpeed * 0.99));
+
+        facTop.innerText = "Cost: | " + factoryPrijs + "+100 p/" + Math.max(timerSpeed / 1000) + 's';
         facLow.innerText = factoryCount;
-        facAdd = (facAdd + 100);
+
+        startTimer(); 
 
     } else {
         alert("Niet genoeg koekjes");
     }
-
 }
 
+localStorage.setItem.count = count;
 
- 
+startTimer();
 
 factoryImg.addEventListener('click', factoryClick);
 
