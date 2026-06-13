@@ -24,15 +24,23 @@
 
     <!-- Deze hieronder werkt niet goed, maak hiervan ordered list, maar nog wel een gridpatroon.-->
 
-    <article>
-        <h1 class="homePageScores">Highscores</h1>
-            <div class="highscore-grid">
-            <p class="highscoreFrames">Overall Highscores</p>
-            <p class="highscoreFrames">Cookie Clicker Highscores</p>
-            <p class="highscoreFrames">Luigi Poker Highscores</p>
-            <p class="highscoreFrames">RPS Highscores</p>
-            </div>
-    </article>
+<article>
+    <h1 class="homePageScores">Highscores</h1>
+        <ul class="highscore-grid">
+            <ul class="highscoreFrames">Overall Highscores
+                <ol>Hello</ol>
+            </ul>
+            <ul class="highscoreFrames">Cookie Clicker Highscores
+                <ol></ol>
+            </ul>
+            <ul class="highscoreFrames">Luigi Poker Highscores
+                <ol></ol>
+            </ul>
+            <ul class="highscoreFrames">RPS Highscores
+                <ol></ol>
+            </ul>
+        </ul>
+</article>
     </section>
 
 
