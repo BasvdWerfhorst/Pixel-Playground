@@ -10,6 +10,13 @@ hamMenu.addEventListener('click', () => {
 });
 
 
+let winTotal = document.getElementById("rpsTotalWins");
+let winCounter = 0;
+
+
+
+
+
 
 
 function playRound(playerMove) {
@@ -34,6 +41,8 @@ function playRound(playerMove) {
         (playerMove === "Scissors" && computerMove === "Paper")
     ) {
         result = " You win! 🎉";
+        winCounter++;
+        winTotal.textContent = "Total wins: " + winCounter;
     } else {
         result = " You lose! 😢";
     }
@@ -145,12 +154,11 @@ function checkStyle() {
 
         style1.appendChild(cloneCartoon);
 
-        // SAFE: Re-run once to bind the click events now that style1 has content
+        
         checkStyle(); 
     } 
 }
 
-// Kickstart the function on initial page load
 checkStyle();
 
 

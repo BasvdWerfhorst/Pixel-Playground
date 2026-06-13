@@ -381,6 +381,14 @@ header nav {
     font-size: larger;
 }
 
+#rpsTotalWins {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+    color: whitesmoke;
+}
+
 .choice-img {
     transition: transform 0.3 ease, box-shadow 0.3 ease;
 }

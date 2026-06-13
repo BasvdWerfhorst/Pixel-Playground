@@ -28,6 +28,8 @@
 
 <p id="result-display">Click the button to play!</p>
 
+<h4 id="rpsTotalWins">Total wins: 0</h4>
+
 
 
 
