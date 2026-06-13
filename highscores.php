@@ -12,6 +12,41 @@
     </header>
     <main>
 
+    <article id="HSP-titles">
+        <h1 class="HSP-titlesStyle">Your Highscores</h1>
+    
+        <h1 class="HSP-titlesStyle">Overall Highscores</h1>
+    </article>
+
+<section id="HSP-grid">
+        
+        <Article>
+            <ol>Hello</ol>
+            <ol>Hello</ol>
+            <ol>Hello</ol>
+        </Article>
+
+        <Article>
+            <ol></ol>
+            <ol>Hello</ol>
+            <ol>Hello</ol>
+            <ol>Hello</ol>
+        </Article>
+
+        <Article>
+            <ol></ol>
+        </Article>
+
+        <Article>
+            <ol></ol>
+        </Article>
+</section>
+
+
+
+
+
+
     </main>
     <footer>
         <?php require 'inc/Footer.php' ?>

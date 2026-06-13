@@ -189,9 +189,43 @@ header nav {
     padding: 0;
 }
 
+/* Highscore Page */
+#HSP-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+}
 
+.HSP-titlesStyle {
+    color: white;
+    margin-left: 10px;
+    
+}
 
+#HSP-grid {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    height: 65vh;
+    margin: 0;
+    gap: 20px;
+}
 
+#HSP-grid article {
+    border: 1px solid green;
+    padding: 20px;
+    overflow: hidden;
+    word-break: break-all;
+    width: 15vw;
+    background-color: rgb(22, 37, 37);
+}
+
+#HSP-grid article ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
 
 
 

@@ -13,9 +13,8 @@ hamMenu.addEventListener('click', () => {
 let winTotal = document.getElementById("rpsTotalWins");
 let winCounter = 0;
 
-
-
-
+let myWins = winCounter;
+localStorage.setItem('myWins', winCounter);
 
 
 
@@ -43,7 +42,10 @@ function playRound(playerMove) {
         result = " You win! 🎉";
         winCounter++;
         winTotal.textContent = "Total wins: " + winCounter;
-    } else {
+
+        let win = localStorage.setItem("myWins").json
+    
+        } else {
         result = " You lose! 😢";
     }
 
