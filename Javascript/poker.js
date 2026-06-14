@@ -75,6 +75,13 @@ function cashOut() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ highscore: PB })
     })
+    if (PB >= 10000) {
+        fetch('database/giveBadge.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ PB: PB })
+        });
+    }
     
 
     setTimeout(bordWipe,1000);
