@@ -38,7 +38,6 @@ function startGame(){
     chips = startChips; 
     PB = startChips;
     sChipUpdate();
-    console.log(chips);
     startG.style.display = "none";
     document.getElementById("startBox").style.display = "none";
     fetch('database/saveChips.php', {
@@ -59,8 +58,6 @@ endG.addEventListener("click", cashOut);
 function cashOut() {
     cashout = chips;
     chips = 0;
-    console.log(cashout);
-    console.log(chips);
     game = 0;
     round = 0;
     turn = 0;
@@ -101,7 +98,6 @@ function sChipUpdate(){
     if(chips >= PB){
         PB = chips
         document.getElementById("PB").children[1].innerHTML = PB;
-        console.log("pb:"+PB)
     }
 }
 
@@ -135,7 +131,6 @@ function startRound(){
         for (const numm of suitNums) {
             deck.push(numm);
         }
-        console.log(deck);
         i++;
     }
 
@@ -145,12 +140,8 @@ function startRound(){
     kaarten[1].push(deck.pop(), deck.pop(), deck.pop(), deck.pop());
     kaarten[2].push(deck.pop(), deck.pop(), deck.pop());
 
-    console.log(kaarten);
-    console.log(deck);
     startcash();
     if (game === 0 ) return;
-    console.log(chips);
-    console.log(pot);
     setTimeout(bordSetup, 1000);
     setTimeout(firstRound, 2000);
 }
@@ -207,7 +198,6 @@ function checking(){
         if(round === 1){
             round = 2;
             turn = 0;
-            console.log(turn);
             setTimeout(round2, 1000);
         }
     }else{
@@ -240,8 +230,6 @@ function raiseing(){
                 pot = pot + getal + getal;
                 tafelPot.children[0].innerHTML = pot;
                 sChipUpdate();
-                console.log(pot);
-                console.log(turn);
                 setTimeout(round2, 1000);
             } else {
                 alert("amount must be a number");
@@ -257,7 +245,6 @@ function folding(){
     if(turn === 1){
         pot = 0;
         turn = 0;
-        console.log(turn);
         endRound();
         if (game === 0 ) return;
     }else{
@@ -278,7 +265,6 @@ function winCheck(){
     tafelAi.children[2].src = "img/svg-cards/" + kaarten[1][2] + ".svg"
     tafelAi.children[3].src = "img/svg-cards/" + kaarten[1][3] + ".svg"
     round = 0;
-    console.log(tafel.children);
     setTimeout(puntenTellen, 1000);
 }
     function puntenTellen(){

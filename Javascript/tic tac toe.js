@@ -35,7 +35,6 @@ const vakjes = {
 };
 
 for (let i = 1; i < 10; i++) {
-    console.log(vakjes[i]); 
     let nums = vakjes[i];
     nums.src = "img/box.svg";
 }
@@ -221,14 +220,12 @@ function negen9(){
     switchbeurt();   
 }
 function switchbeurt(){
-    console.log(turn);
     if (speler_speler2 === 1){
         text.innerHTML = "player 2";
     } else {
         text.innerHTML = "player 1";
     }
     draw++
-    console.log(speler1Punten +","+ speler2Punten)
     setTimeout(spelerSwitch, 1000);
     winCheck();
     
