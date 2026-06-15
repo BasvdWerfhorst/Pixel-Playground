@@ -48,7 +48,7 @@
     <article class="RPS-cards">
         <img src="\Pixel-Playground\img\RPS\Rock 2.jpg" class="choice-img" alt="Plaatje steen" id="rock">
         <img src="\Pixel-Playground\img\RPS\Papier 2.jpg" class="choice-img" alt="Plaatje papier" id="paper">
-        <img src="\Pixel-Playground\img\RPS\Schaar 2.jpg" class="choice-img" alt="Plaatje schaar" id="scissors">
+        <img src="\Pixel-Playground\img\RPS\Schaar 2.2.jpg" class="choice-img" alt="Plaatje schaar" id="scissors" width="150px" height="150px">
     </article>
 </template>
 
@@ -56,7 +56,7 @@
 
 <template id="template-Neon">
     <article class="RPS-cards">
-        <img src="\Pixel-Playground\img\RPS\Rock 3.png" class="choice-img" alt="Plaatje steen" id="rock">
+        <img src="\Pixel-Playground\img\RPS\Rock 3.2.png" class="choice-img" alt="Plaatje steen" id="rock">
         <img src="\Pixel-Playground\img\RPS\Papier 3.png" class="choice-img" alt="Plaatje papier" id="paper">
         <img src="\Pixel-Playground\img\RPS\schaar 3.avif" class="choice-img" alt="Plaatje schaar" id="scissors">
     </article>
