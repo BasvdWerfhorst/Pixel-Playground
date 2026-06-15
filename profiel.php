@@ -1,8 +1,14 @@
 <?php
 session_start();
+require 'database/DBC.php';
 if(empty($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true){
     header('Location: index.php');
     exit;
+}else{
+$id = $_SESSION['gebruiker_id'];
+
+$sql = "SELECT * FROM gebruiker_badge WHERE gebruiker_id = '$id'";
+$result = $conn->query($sql);
 }
 session_abort();
 ?>
@@ -20,10 +26,21 @@ session_abort();
     <?php require 'inc/Header.php' ?>
 </header>
 
-<main>
+<main id="profiel">
+<article id='inlogOpties'>
     <p>Ingelogd als <?php echo $_SESSION['gebruikersnaam']; ?></p>
     <a href="database/uitgelogd.php">Uitloggen</a>
-    <a href="database/inlogChange.php">change info</a>
+    <a href="database/inlogChange.php">change info</a> 
+</article>
+<aside id="badge">
+    <?php while($row = $result->fetch_object()){ ?>
+        <?php if($row->badge_id == 1){ ?>
+            <img src="img/badges/poker.png" alt="Pro Gambler">
+            <p>Pro Gambler</p>
+        <?php } ?>
+    <?php } ?>
+</aside>
+    
 </main>
 
 <footer>

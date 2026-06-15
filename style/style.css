@@ -648,3 +648,12 @@ header nav {
     position:absolute;
     left: 5vw;
 }
+#profiel{
+    display: flex;
+}
+#inlogOpties{
+    width: 40vw;
+}
+#badge{
+    width: 60vw;
+}
