@@ -15,17 +15,17 @@
     <h1 id="title-ticTacToe">tic tac toe</h1>
     <section id="ticTacMain">
         <section id="tic-tac-toe">
-            <img id="1-1" class="ticTacToe-x-o" alt="">
-            <img id="1-2" class="ticTacToe-x-o" alt="">
-            <img id="1-3" class="ticTacToe-x-o" alt="">
+            <img id="1-1" class="ticTacToe-x-o" alt="Box 1-1">
+            <img id="1-2" class="ticTacToe-x-o" alt="Box 1-2">
+            <img id="1-3" class="ticTacToe-x-o" alt="Box 1-3">
             
-            <img id="2-1" class="ticTacToe-x-o" alt="">
-            <img id="2-2" class="ticTacToe-x-o" alt="">
-            <img id="2-3" class="ticTacToe-x-o" alt="">
+            <img id="2-1" class="ticTacToe-x-o" alt="Box 2-1">
+            <img id="2-2" class="ticTacToe-x-o" alt="Box 2-2">
+            <img id="2-3" class="ticTacToe-x-o" alt="Box 2-3">
             
-            <img id="3-1" class="ticTacToe-x-o" alt="">
-            <img id="3-2" class="ticTacToe-x-o" alt="">
-            <img id="3-3" class="ticTacToe-x-o" alt="">
+            <img id="3-1" class="ticTacToe-x-o" alt="Box 3-1">
+            <img id="3-2" class="ticTacToe-x-o" alt="Box 3-2">
+            <img id="3-3" class="ticTacToe-x-o" alt="Box 3-3">
         </section>
 
         <aside id="aside">
