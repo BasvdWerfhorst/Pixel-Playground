@@ -51,10 +51,12 @@ function bordWipe(){
     turn = 0;
     text.innerHTML = "";
     speler_speler2 = 0;
+    speler1Punten = [];
+    speler2Punten = [];
+    draw = 0;
+
     for (let i = 1; i < 10; i++) {
-        console.log(vakjes[i]); 
-        let nums = vakjes[i];
-        nums.src = "img/box.svg";
+        vakjes[i].src = "img/box.svg";
     }
 }
 
