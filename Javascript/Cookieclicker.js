@@ -29,12 +29,28 @@ let facLow = document.getElementById("purchaseNumberLowFactory");
 let facAdd = 100;
 
 
+// localstorage:
+let counter = document.getElementById('cookie-counter');
+
+let savedValue = localStorage.getItem('myCount');
+let count = savedValue ? Number(savedValue) : 100;
+
+counter.textContent = Math.floor(count);
+
+
+
+
+
+
 // Base cookie clicker
 
 function addCounter(event) {
     count = count + 1;
     counter.textContent = Math.floor(count);
+    localStorage.setItem('myCount', count);
 }
+
+
 
 cookie.addEventListener('click', addCounter)
 

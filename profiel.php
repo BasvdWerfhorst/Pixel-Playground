@@ -29,7 +29,7 @@ session_abort();
 <main id="profiel">
 <article id='inlogOpties'>
     <p>Ingelogd als <?php echo $_SESSION['gebruikersnaam']; ?></p>
-    <a href="database/uitgelogd.php">Uitloggen</a>
+    <a href="database/uitgelogd.php">Uitloggen</a><br><br>
     <a href="database/inlogChange.php">change info</a> 
 </article>
 <aside id="badge">

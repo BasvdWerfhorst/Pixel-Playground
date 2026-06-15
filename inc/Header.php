@@ -13,7 +13,7 @@
         <a href="highscores.php" class="headerNav">Highscores</a>
         <a href="profiel.php" class="headerNav">Profile</a>
 
-        <a href="database/uitgelogd.php" class="logButton">log uit</a>
+        <a href="database/uitgelogd.php" class="logButton">Log out</a>
         <?php
     } else {
         ?>
