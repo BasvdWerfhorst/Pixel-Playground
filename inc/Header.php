@@ -26,3 +26,4 @@
 <nav id="hamburgerMenu">
 
 </nav>
+<?php session_abort() ?>

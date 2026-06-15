@@ -23,6 +23,7 @@ session_abort();
 <main>
     <p>Ingelogd als <?php echo $_SESSION['gebruikersnaam']; ?></p>
     <a href="database/uitgelogd.php">Uitloggen</a>
+    <a href="database/inlogChange.php">change info</a>
 </main>
 
 <footer>
