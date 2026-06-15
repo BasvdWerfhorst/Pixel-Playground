@@ -9,9 +9,9 @@
     <?php
     if (isset($_SESSION['loggedIn'])){
         ?>
-        <a href="friend.php" class="headerNav">friends</a>
-        <a href="highscores.php" class="headerNav">highscores</a>
-        <a href="profiel.php" class="headerNav">profiel</a>
+        <a href="friend.php" class="headerNav">Friends</a>
+        <a href="highscores.php" class="headerNav">Highscores</a>
+        <a href="profiel.php" class="headerNav">Profile</a>
 
         <a href="database/uitgelogd.php" class="logButton">log uit</a>
         <?php
