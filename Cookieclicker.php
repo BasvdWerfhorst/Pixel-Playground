@@ -13,6 +13,8 @@
         <?php require 'inc/Header.php' ?>
     </header>
 
+        <button id="freeCookies"></button>
+
     <main id="cookie-grid">
     <left id='cookie-left'>
         <header class="title">Cookie Clicker</header>                

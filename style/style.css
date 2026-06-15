@@ -285,6 +285,13 @@ header nav {
 
 /* Cookie clicker */
 
+#freeCookies {
+    background-color: rgb(47, 45, 45);
+    height: 15px;
+    width: 5px;
+    position: absolute;
+    margin-top: 11vh;
+}
 
 #cookie-grid {
     display: grid;

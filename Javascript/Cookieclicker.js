@@ -28,26 +28,22 @@ let facTop = document.getElementById("prijsFactory");
 let facLow = document.getElementById("purchaseNumberLowFactory");
 let facAdd = 100;
 
+// Free cookies
 
-// localstorage:
-let counter = document.getElementById('cookie-counter');
+let freeCookies = document.getElementById('freeCookies');
 
-let savedValue = localStorage.getItem('myCount');
-let count = savedValue ? Number(savedValue) : 100;
+function freeCC() {
+    count = count + 1000;
+}
 
-counter.textContent = Math.floor(count);
-
-
-
-
-
+freeCookies.addEventListener('click', freeCC)
 
 // Base cookie clicker
 
 function addCounter(event) {
     count = count + 1;
     counter.textContent = Math.floor(count);
-    localStorage.setItem('myCount', count);
+    
 }
 
 
@@ -66,7 +62,7 @@ function autoCounter() {
     // console.log(count);
 }
 
-// OVEN!
+// oven
 
 function ovenKoop() { //hier roep ik de oven eventlistner op.
 
