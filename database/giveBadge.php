@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include 'db.php';
+include 'DBC.php';
 
 $id = $_SESSION['gebruiker_id'];
 
