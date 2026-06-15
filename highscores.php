@@ -21,16 +21,16 @@
 <section id="HSP-grid">
         
         <Article>
-            <ol>Hello</ol>
-            <ol>Hello</ol>
-            <ol>Hello</ol>
+            <ol></ol>
+            <ol></ol>
+            <ol></ol>
         </Article>
 
         <Article>
             <ol></ol>
-            <ol>Hello</ol>
-            <ol>Hello</ol>
-            <ol>Hello</ol>
+            <ol></ol>
+            <ol></ol>
+            <ol></ol>
         </Article>
 
         <Article>

@@ -13,8 +13,7 @@ hamMenu.addEventListener('click', () => {
 let winTotal = document.getElementById("rpsTotalWins");
 let winCounter = 0;
 
-let myWins = winCounter;
-localStorage.setItem('myWins', winCounter);
+
 
 
 
