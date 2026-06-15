@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokergame Page</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
     <script src="javascript/poker.js" defer></script>
 </head>

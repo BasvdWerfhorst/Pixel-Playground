@@ -17,7 +17,7 @@ session_abort();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="\Pixel-Playground\style\style.css">
 </head>
 <body>
@@ -28,8 +28,8 @@ session_abort();
 
 <main id="profiel">
 <article id='inlogOpties'>
-    <p>Ingelogd als <?php echo $_SESSION['gebruikersnaam']; ?></p>
-    <a href="database/uitgelogd.php">Uitloggen</a><br><br>
+    <p>Logged in as: <?php echo $_SESSION['gebruikersnaam']; ?></p>
+    <a href="database/uitgelogd.php">Log out</a><br><br>
     <a href="database/inlogChange.php">change info</a> 
 </article>
 <aside id="badge">
