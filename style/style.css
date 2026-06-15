@@ -657,3 +657,7 @@ header nav {
 #badge{
     width: 60vw;
 }
+#badge img{
+    width: 10vw;
+    height: auto;
+}

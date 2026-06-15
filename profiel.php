@@ -35,8 +35,8 @@ session_abort();
 <aside id="badge">
     <?php while($row = $result->fetch_object()){ ?>
         <?php if($row->badge_id == 1){ ?>
-            <img src="img/badges/poker.png" alt="Pro Gambler">
             <p>Pro Gambler</p>
+            <img src="img/poker-chip-badge.svg" alt="Pro Gambler">
         <?php } ?>
     <?php } ?>
 </aside>
