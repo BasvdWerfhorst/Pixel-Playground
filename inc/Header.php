@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+} ?>
 <section id="logo">
         <a href="index.php"><img src="\Pixel-Playground\img\NodeHub-homelogo-transparant.png" alt="Nodehub Banner" title="Nodehub Banner"></a>
         <a id="logoText" href="index.php"><h1>Node<span>Hub</span></h1></a> 
@@ -26,4 +28,3 @@
 <nav id="hamburgerMenu">
 
 </nav>
-<?php session_abort() ?>
